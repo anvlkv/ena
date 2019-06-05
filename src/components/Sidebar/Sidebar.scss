@@ -1,8 +1,20 @@
 .Sidebar {
+  .Diagram {
+    margin: 1em;
+    .diagram {
+      margin-top: 10vh;
+      width: 100%;
+      height: auto;
+    }
+  }
   .categories-list {
     list-style: none;
     padding: 0;
+    a {
+      text-decoration: none;
+    }
     .category-link {
+      padding: .25em;
       button {
         background: none;
         border: none;
@@ -10,7 +22,7 @@
       .pages-list {
         list-style: none;
         .page-link {
-
+          padding: .25em;
         }
       }
     }

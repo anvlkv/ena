@@ -5,6 +5,7 @@ import { stringToUrl } from '../../utils/stringToUrl';
 import Diagram from '../Diagram/Diagram';
 import PropTypes from 'prop-types';
 import categories from '../../fixtures/categories';
+import './Sidebar.scss';
 
 class Sidebar extends React.Component {
     static propTypes = {

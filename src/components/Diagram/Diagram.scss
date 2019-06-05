@@ -3,5 +3,13 @@
     max-width: 100%;
     height: 70vh;
     margin: 5vh auto;
+
+    .interactive {
+      cursor: pointer;
+      &:hover{
+        stroke-width: 1px;
+        stroke: coral;
+      }
+    }
   }
 }

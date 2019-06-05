@@ -19,6 +19,10 @@ class App extends React.Component {
         hideSidebar: true
     };
 
+    componentDidMount() {
+        this.setState({hideSidebar: history.location.pathname === '/'})
+    }
+
     render() {
         console.log(categories);
         return (
@@ -42,7 +46,7 @@ class App extends React.Component {
                                         <ScrollRouter onRouteChange={this.handleRouteChange.bind(this)}>
                                             <Landing route=""/>
                                             {categories.map((c, i) => (
-                                                <Category key={`category-${i}`} category={c} route={stringToUrl(c.name)}/>
+                                                <Category key={`category-${i}`} category={c} route={`/${stringToUrl(c.name)}`}/>
                                             ))}
                                         </ScrollRouter>
                                     );

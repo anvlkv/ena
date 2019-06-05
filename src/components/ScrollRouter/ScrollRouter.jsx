@@ -19,6 +19,11 @@ class ScrollRouter extends React.Component{
         activeChild: ''
     };
 
+    static getDerivedStateFromProps(props, state) {
+        state.activeChild = props.match.url;
+        return state;
+    }
+
     renderChild(child, i) {
         if (!this.routedChildren[i]) {
             this.routedChildren[i] = { ref: React.createRef() };
@@ -34,6 +39,16 @@ class ScrollRouter extends React.Component{
     }
 
     handleScroll(e) {
+        if (this.skipScrollEvent) {
+            clearTimeout(this.skipScrollEvent);
+            this.skipScrollEvent = setTimeout(() => {
+                requestAnimationFrame(() => {
+                    this.skipScrollEvent = false;
+                });
+            }, 100);
+            return;
+        }
+
         const scrollPosition = this.containerRef.current.scrollTop + this.containerRef.current.offsetTop;
 
         let activeRouteIndex = this.routedChildren.map(ch => ch.ref).findIndex(({current}, at) => {
@@ -44,6 +59,7 @@ class ScrollRouter extends React.Component{
         activeRouteIndex = activeRouteIndex < 0 ? 0 : activeRouteIndex;
 
         const route = this.routedChildren[activeRouteIndex].child.props.route;
+
         if (route !== this.state.activeChild) {
             this.setState({activeChild: route});
             this.props.history.replace(route);
@@ -51,12 +67,6 @@ class ScrollRouter extends React.Component{
                 this.props.onRouteChange(route);
             }
         }
-
-        // console.log(this.childRefs.map(({current}) => {
-        //    return current.offsetTop;
-        // }));
-        //
-        // console.log(this.containerRef.current);
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -65,12 +75,19 @@ class ScrollRouter extends React.Component{
         }
     }
 
+    componentDidMount(){
+        this.scrollToActiveChild();
+    }
+
     scrollToActiveChild() {
-        const activeChild = this.routedChildren.find(ch => ch.child.props.url === this.props.match.url);
+        const activeChild = this.routedChildren.find(ch => ch.child.props.route === this.state.activeChild);
         if (activeChild) {
-            requestAnimationFrame(() => {
-                activeChild.ref.current.scrollIntoView();
-            });
+            this.skipScrollEvent = setTimeout(() => {
+                requestAnimationFrame(() => {
+                    this.skipScrollEvent = false;
+                });
+            }, 100);
+            this.containerRef.current.scrollTop = activeChild.ref.current.offsetTop;
         }
     }
 

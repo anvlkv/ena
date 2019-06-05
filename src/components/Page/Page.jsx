@@ -1,8 +1,10 @@
 import React from 'react';
 import './Page.scss';
 import PropTypes from 'prop-types';
+import { Carousel } from 'react-responsive-carousel';
 import pages from '../../fixtures/pages';
 import { stringToUrl } from '../../utils/stringToUrl';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 class Page extends React.Component {
     static propTypes = {
@@ -32,10 +34,16 @@ class Page extends React.Component {
         return (
             <article className="Page">
                 <h2>{this.state.page.name}</h2>
-                <p className="lead">{this.state.page.intro}</p>
-                <img className="page-cover-image"
-                     src={require(`../../assets/images/categories/${this.state.page.cover}`)}
-                     alt={this.state.page.coverAlt || this.state.page.name}/>
+                <p className="lead">{this.state.page.lead}</p>
+                <Carousel showThumbs={false} infiniteLoop={true}>
+                    <img className="page-cover-image"
+                         src={require(`../../assets/images/pages/${this.state.page.cover}`)}
+                         alt={this.state.page.coverAlt || this.state.page.name}/>
+                    {this.state.page.images ? this.state.page.images.map((img, i) => (
+                        <img key={`page-image-${i}`} className="page-cover-image"
+                             src={require(`../../assets/images/pages/${img}`)}/>
+                    )) : ''}
+                </Carousel>
                 <div className="primary-content-layout">
                     <div className="page-description" dangerouslySetInnerHTML={{__html: this.state.page.description}}/>
                     {this.state.page.documents ? (

@@ -12,7 +12,8 @@
     "react-scripts": "3.0.1",
     "react-scrollspy": "^3.4.0",
     "request": "^2.88.0",
-    "request-promise": "^4.2.4"
+    "request-promise": "^4.2.4",
+    "underscore": "^1.9.1"
   },
   "scripts": {
     "start": "react-scripts start $NODE_DEBUG_OPTION",
