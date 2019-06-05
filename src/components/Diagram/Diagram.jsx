@@ -18,7 +18,7 @@ class Diagram extends React.Component {
             <div className="Diagram">
                 <svg width="100%"
                     height="100%"
-                    viewBox="-10 -10 1010 1010"
+                    viewBox="-10 -10 1020 1030"
                     xmlSpace="preserve"
                     style={{
                         fillRule: 'evenodd',
