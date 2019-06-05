@@ -16,6 +16,22 @@
     ]
   },
   {
+    "name": "Greywater filter",
+    "cover": "placeholder.jpg",
+    "lead": "Rain water collector and sand filter",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "coverAlt": "this is placeholder image",
+    "documents": [
+      {
+        "name": "design.dwg",
+        "url": "http://404"
+      }
+    ],
+    "images": [
+      "placeholder.jpg"
+    ]
+  },
+  {
     "name": "Urine filter",
     "lead": "Urine filter",
     "description": "text <strong>or</strong> <i>markup<i/>",
@@ -30,5 +46,25 @@
     "images": [
       "placeholder.jpg"
     ]
+  },
+  {
+    "name": "Solar stored supply network",
+    "cover": "placeholder.jpg"
+  },
+  {
+    "name": "Solar direct applied",
+    "cover": "placeholder.jpg"
+  },
+  {
+    "name": "Aquaponics (op oppervlakte water)",
+    "cover": "placeholder.jpg"
+  },
+  {
+    "name": "Rocket Stove mass heater",
+    "cover": "placeholder.jpg"
+  },
+  {
+    "name": "Rocket Stove grill",
+    "cover": "placeholder.jpg"
   }
 ]

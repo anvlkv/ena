@@ -21,7 +21,7 @@ class Sidebar extends React.Component {
                 ...p,
                 url: `${stringToUrl(c.name)}/${stringToUrl(p.name)}`
             })) : null,
-            expanded: false
+            expanded: true
         }))
     };
 

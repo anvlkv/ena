@@ -16,7 +16,7 @@ class Category  extends React.Component{
         return (
             <li className="page-thumbnail" key={`page-thumbnail-${i}`}>
                 <Link to={pageUrl}>
-                    <img src={require(`../../assets/images/pages/${page.cover}`)} alt={page.coverAlt}/>
+                    <img width="100" height="60" src={require(`../../assets/images/pages/${page.cover}`)} alt={page.coverAlt}/>
                     <p>{page.name}</p>
                 </Link>
             </li>
@@ -30,9 +30,12 @@ class Category  extends React.Component{
             <article className={`Category ${categoryName}`} id={categoryName}>
                 <h3>{this.props.category.name}</h3>
                 <p className="lead">{this.props.category.intro}</p>
-                <img className="category-cover-image"
-                     src={require(`../../assets/images/categories/${this.props.category.cover}`)}
-                     alt={this.props.category.coverAlt || this.props.category.name}/>
+                <div className="cover" style={{backgroundColor: this.props.category.color}}>
+                    <img width="960" height="700"
+                         className="category-cover-image"
+                         src={require(`../../assets/images/categories/${this.props.category.cover}`)}
+                         alt={this.props.category.coverAlt || this.props.category.name}/>
+                </div>
                 <div className="category-description" dangerouslySetInnerHTML={{__html: this.props.category.description}}/>
                 {this.props.category.pages ? (
                     <ul className="pages-list">

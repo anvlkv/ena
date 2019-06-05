@@ -23,7 +23,7 @@ class Page extends React.Component {
     renderDocumentThumbnail(doc, i) {
         return (
             <li key={`page-doc-thumbnail-${i}`}>
-                <a target="_blank" href={doc.url}>
+                <a target="_blank" href={doc.url} rel="noopener noreferrer">
                     {doc.name}
                 </a>
             </li>
@@ -36,13 +36,23 @@ class Page extends React.Component {
                 <h2>{this.state.page.name}</h2>
                 <p className="lead">{this.state.page.lead}</p>
                 <Carousel showThumbs={false} infiniteLoop={true}>
-                    <img className="page-cover-image"
-                         src={require(`../../assets/images/pages/${this.state.page.cover}`)}
-                         alt={this.state.page.coverAlt || this.state.page.name}/>
-                    {this.state.page.images ? this.state.page.images.map((img, i) => (
-                        <img key={`page-image-${i}`} className="page-cover-image"
-                             src={require(`../../assets/images/pages/${img}`)}/>
-                    )) : ''}
+                    {(this.state.page.images || []).reduce((acc, slide, at, all) => {
+                        acc.push(
+                            <img width="960"
+                                 height="700"
+                                 key={`page-image-${at + 1}`}
+                                 alt={this.state.page.name}
+                                 className="page-cover-image"
+                                 src={require(`../../assets/images/pages/${slide}`)}/>);
+                        return acc;
+                    }, [
+                        <img width="960"
+                             height="700"
+                             key={'page-image-1'}
+                             className="page-cover-image"
+                             src={require(`../../assets/images/pages/${this.state.page.cover}`)}
+                             alt={this.state.page.coverAlt || this.state.page.name}/>
+                    ])}
                 </Carousel>
                 <div className="primary-content-layout">
                     <div className="page-description" dangerouslySetInnerHTML={{__html: this.state.page.description}}/>

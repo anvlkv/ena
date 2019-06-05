@@ -1,9 +1,20 @@
 .Category {
+  width: 100%;
   padding: 3em;
-  .category-cover-image {
-    max-width: 100%;
-    max-height: 45vh;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  .cover {
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    text-align: center;
+    .category-cover-image {
+      display: block;
+      max-width: 100%;
+      max-height: 45vh;
+      margin: 0 auto;
+      height: auto;
+      width: auto;
+    }
   }
 
   .pages-list {

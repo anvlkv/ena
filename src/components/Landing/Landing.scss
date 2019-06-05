@@ -6,17 +6,20 @@
     align-items: center;
     figcaption {
       padding: 2em;
+      flex-basis: 50%;
+      flex-grow: 0;
+      flex-shrink: 1;
     }
-    figcaption:first-letter {
+    figcaption p:first-of-type:first-letter {
       font-size: 2.25em;
       font-weight: bolder;
       float: left;
       color: rgb(243,243,243);
       background-color: rgb(187,196,169);
       line-height: 1;
-      padding: .05em;
-      padding-right: .025em;
+      padding: .05em .025em .05em .05em;
       margin-right: .025em;
+      margin-top: -.0025em;
     }
   }
 }

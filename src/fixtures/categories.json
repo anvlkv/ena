@@ -7,69 +7,71 @@
     "coverAlt": "this is placeholder image"
   },
   {
-    "name": "Local community",
-    "intro": "This is a short lead into topic...",
-    "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image"
-  },
-  {
     "name": "Water",
-    "intro": "This is a short lead into topic...",
     "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image",
+    "color": "#7EA9CB",
+    "cover": "Water.png",
     "pages": [
       {
         "name": "Rain water collector",
-        "cover": "placeholder.jpg",
-        "coverAlt": "this is placeholder image"
+        "cover": "placeholder.jpg"
+      },
+      {
+        "name": "Greywater filter",
+        "cover": "placeholder.jpg"
       },
       {
         "name": "Urine filter",
-        "cover": "placeholder.jpg",
-        "coverAlt": "this is placeholder image"
+        "cover": "placeholder.jpg"
       }
     ]
   },
   {
     "name": "Electricity",
-    "intro": "This is a short lead into topic...",
     "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image"
+    "color": "#D3AC71",
+    "cover": "Electricity.png",
+    "pages": [
+      {
+        "name": "Solar stored supply network",
+        "cover": "placeholder.jpg"
+      },
+      {
+        "name": "Solar direct applied",
+        "cover": "placeholder.jpg"
+      }
+    ]
   },
   {
-    "name": "Food",
-    "intro": "This is a short lead into topic...",
+    "name": "Bio mass",
     "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image"
+    "cover": "Food.png",
+    "color": "#7BC76C",
+    "pages": [
+      {
+        "name": "Aquaponics (op oppervlakte water)",
+        "cover": "placeholder.jpg"
+      }
+    ]
   },
   {
     "name": "Heat",
-    "intro": "This is a short lead into topic...",
     "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image"
+    "cover": "Heat.png",
+    "color": "#DB7A71",
+    "pages": [
+      {
+        "name": "Rocket Stove mass heater",
+        "cover": "placeholder.jpg"
+      },
+      {
+        "name": "Rocket Stove grill",
+        "cover": "placeholder.jpg"
+      }
+    ]
   },
   {
-    "name": "Public organizations",
-    "intro": "This is a short lead into topic...",
-    "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image"
-  },
-  {
-    "name": "Private organizations",
-    "intro": "This is a short lead into topic...",
-    "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image"
-  },
-  {
-    "name": "Science",
-    "intro": "This is a short lead into topic...",
+    "name": "Quintuple helix collaboration",
     "description": "text <strong>or</strong> <i>markup<i/>",
     "cover": "placeholder.jpg",
     "coverAlt": "this is placeholder image"

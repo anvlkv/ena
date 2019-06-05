@@ -38,17 +38,23 @@ class ScrollRouter extends React.Component{
         )
     }
 
-    handleScroll(e) {
+    skipScroll() {
         if (this.skipScrollEvent) {
             clearTimeout(this.skipScrollEvent);
-            this.skipScrollEvent = setTimeout(() => {
-                requestAnimationFrame(() => {
-                    this.skipScrollEvent = false;
-                });
-            }, 100);
-            return;
         }
 
+        if (this.animationFramRequest) {
+            cancelAnimationFrame(this.animationFramRequest);
+        }
+
+        this.skipScrollEvent = setTimeout(() => {
+            this.animationFramRequest = requestAnimationFrame(() => {
+                delete this.skipScrollEvent;
+            });
+        }, 100);
+    }
+
+    maybeSetRouteByScrollPosition() {
         const scrollPosition = this.containerRef.current.scrollTop + this.containerRef.current.offsetTop;
 
         let activeRouteIndex = this.routedChildren.map(ch => ch.ref).findIndex(({current}, at) => {
@@ -61,12 +67,20 @@ class ScrollRouter extends React.Component{
         const route = this.routedChildren[activeRouteIndex].child.props.route;
 
         if (route !== this.state.activeChild) {
-            this.setState({activeChild: route});
-            this.props.history.replace(route);
             if (this.props.onRouteChange) {
                 this.props.onRouteChange(route);
             }
+            this.setState({activeChild: route});
+            this.props.history.replace(route);
         }
+    }
+
+    handleScroll() {
+        if (this.skipScrollEvent) {
+            this.skipScroll();
+            return;
+        }
+        this.maybeSetRouteByScrollPosition();
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
@@ -82,11 +96,7 @@ class ScrollRouter extends React.Component{
     scrollToActiveChild() {
         const activeChild = this.routedChildren.find(ch => ch.child.props.route === this.state.activeChild);
         if (activeChild) {
-            this.skipScrollEvent = setTimeout(() => {
-                requestAnimationFrame(() => {
-                    this.skipScrollEvent = false;
-                });
-            }, 100);
+            this.skipScroll();
             this.containerRef.current.scrollTop = activeChild.ref.current.offsetTop;
         }
     }
