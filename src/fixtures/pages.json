@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Rain water collector",
+    "lead": "Rain water collector and sand filter",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image",
+    "documents": [
+      {
+        "name": "design.dwg",
+        "url": "http://404"
+      }
+    ],
+    "images": [
+      "placeholder.jpg"
+    ]
+  },
+  {
+    "name": "Urine filter",
+    "lead": "Urine filter",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image",
+    "documents": [
+      {
+        "name": "design.dwg",
+        "url": "http://404"
+      }
+    ],
+    "images": [
+      "placeholder.jpg"
+    ]
+  }
+]

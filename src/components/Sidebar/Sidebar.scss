@@ -1,0 +1,18 @@
+.Sidebar {
+  .categories-list {
+    list-style: none;
+    padding: 0;
+    .category-link {
+      button {
+        background: none;
+        border: none;
+      }
+      .pages-list {
+        list-style: none;
+        .page-link {
+
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "name": "P2P Production",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image"
+  },
+  {
+    "name": "Local community",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image"
+  },
+  {
+    "name": "Water",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image",
+    "pages": [
+      {
+        "name": "Rain water collector",
+        "cover": "placeholder.jpg",
+        "coverAlt": "this is placeholder image"
+      },
+      {
+        "name": "Urine filter",
+        "cover": "placeholder.jpg",
+        "coverAlt": "this is placeholder image"
+      }
+    ]
+  },
+  {
+    "name": "Electricity",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image"
+  },
+  {
+    "name": "Food",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image"
+  },
+  {
+    "name": "Heat",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image"
+  },
+  {
+    "name": "Public organizations",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image"
+  },
+  {
+    "name": "Private organizations",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image"
+  },
+  {
+    "name": "Science",
+    "intro": "This is a short lead into topic...",
+    "description": "text <strong>or</strong> <i>markup<i/>",
+    "cover": "placeholder.jpg",
+    "coverAlt": "this is placeholder image"
+  }
+]
