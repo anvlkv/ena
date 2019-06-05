@@ -17,7 +17,7 @@ class Diagram extends React.Component {
         return (
             <div className="Diagram">
                 <svg className="diagram"
-                    viewBox="0 0 1000 1000"
+                    viewBox="-50 -50 1100 1100"
                     version="1.1"
                     xmlnsXlink="http://www.w3.org/1999/xlink"
                     xmlSpace="preserve"
@@ -32,17 +32,7 @@ class Diagram extends React.Component {
                         id="diagram alt"
                         transform="matrix(1,0,0,1,-1482.11,0) matrix(1,0,0,1,1482.11,0)"
                     >
-                        <rect
-                            x={0}
-                            y={0}
-                            width={1000}
-                            height={1000}
-                            style={{ fill: "none" }}
-                        />
-                        <clipPath id="a">
-                            <rect x={0} y={0} width={1000} height={1000} />
-                        </clipPath>
-                        <g clipPath="url(#a)">
+                        <g>
                             <g
                                 id="donut private orgs - public orgs - science"
                                 transform="matrix(0,-1,1,0,-3.17448,1000)"
@@ -1177,7 +1167,7 @@ class Diagram extends React.Component {
                             </g>
                             <g className="interactive" onClick={() => this.handleDiagramClick('p2p-production')}
                                 id="core P2P-production"
-                                transform="matrix(1.06512,0,0,1.06512,-32.5581,-32.5581)"
+                               transform="matrix(1.06512,0,0,1.06512,-32.5581,-32.5581)"
                             >
                                 <ellipse
                                     cx="499.194"

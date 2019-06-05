@@ -20,7 +20,13 @@ class App extends React.Component {
     };
 
     componentDidMount() {
-        this.setState({hideSidebar: history.location.pathname === '/'})
+        this.setState({hideSidebar: history.location.pathname === '/'});
+
+        history.listen(({pathname}) => {
+            if (this.state.hideSidebar !== (pathname === '/')) {
+                this.setState({hideSidebar: pathname === '/'});
+            }
+        })
     }
 
     render() {
