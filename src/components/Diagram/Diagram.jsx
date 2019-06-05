@@ -16,1293 +16,1486 @@ class Diagram extends React.Component {
     render() {
         return (
             <div className="Diagram">
-                <svg className="diagram"
-                    viewBox="-50 -50 1100 1100"
-                    version="1.1"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                <svg width="100%"
+                    height="100%"
+                    viewBox="-10 -10 1010 1010"
                     xmlSpace="preserve"
                     style={{
-                        fillRule: "evenodd",
-                        clipRule: "evenodd",
-                        strokeLinejoin: "round",
-                        strokeMiterlimit: "1.41421"
+                        fillRule: 'evenodd',
+                        clipRule: 'evenodd',
+                        strokeLinejoin: 'round',
+                        strokeMiterlimit: 1.41421,
                     }}
                 >
-                    <g
-                        id="diagram alt"
-                        transform="matrix(1,0,0,1,-1482.11,0) matrix(1,0,0,1,1482.11,0)"
-                    >
-                        <g>
-                            <g
-                                id="donut private orgs - public orgs - science"
-                                transform="matrix(0,-1,1,0,-3.17448,1000)"
-                            >
-                                <g className="interactive" onClick={() => this.handleDiagramClick('public-organizations')} id="public orgs">
-                                    <path
-                                        d="M864 601c0-158.506-128.494-287-287-287a286.997 286.997 0 0 0-143.5 38.451l83.23 144.158A120.545 120.545 0 0 1 577 480.46c66.572 0 120.54 53.968 120.54 120.54H864z"
-                                        style={{ fill: "url(#b)" }}
-                                        id="background-publick organizations"
-                                        transform="matrix(1.73663,-8.31795e-33,8.31795e-33,1.73663,-503.623,-542.127)"
-                                    />
-                                    <g
-                                        id="public organizations"
-                                        transform="matrix(1,-4.78971e-33,4.78971e-33,1,-134.809,-211.857)"
-                                    >
+                    <rect
+                        id="diagram-alt"
+                        x={0}
+                        y={0}
+                        width={1000}
+                        height={1000}
+                        style={{
+                            fill: 'none',
+                        }}
+                    />
+                    <clipPath id="_clip1">
+                        <rect x={0} y={0} width={1000} height={1000} />
+                    </clipPath>
+                    <g>
+                        <g
+                            id="donut-private-orgs---public-orgs---science"
+                        >
+                            <g id="public-orgs"
+                               className="interactive"
+                               onClick={() => this.handleDiagramClick('quintuple-helix-collaboration')}>
+                                <path
+                                    id="background-publick-organizations"
+                                    d="M498.413,3.174c-275.266,0 -498.413,223.147 -498.413,498.413c0,87.49 23.03,173.438 66.775,249.207l250.35,-144.54c-18.373,-31.823 -28.046,-67.921 -28.046,-104.667c0,-115.611 93.722,-209.333 209.334,-209.333l0,-289.08Z"
+                                    style={{
+                                        fill: 'url(#_Radial2)',
+                                    }}
+                                />
+                                <g
+                                    id="public-organizations"
+                                    transform="matrix(-4.78971e-33,-1,1,-4.78971e-33,-215.031,1134.81)"
+                                >
+                                    <g transform="matrix(0.99924,0.0389695,-0.0389695,0.99924,12.7094,-24.5068)">
                                         <text
                                             x="634.987px"
                                             y="313.759px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.99924,0.0389695,-0.0389695,0.99924,12.7094,-24.5068)"
                                         >
-                                            P
+                                            {'P'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.994722,0.102606,-0.102606,0.994722,35.8002,-66.2906)">
                                         <text
                                             x="662.267px"
                                             y="314.845px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.994722,0.102606,-0.102606,0.994722,35.8002,-66.2906)"
                                         >
-                                            u
+                                            {'u'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.985636,0.168883,-0.168883,0.985636,63.4828,-111.555)">
                                         <text
                                             x="687.541px"
                                             y="317.421px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.985636,0.168883,-0.168883,0.985636,63.4828,-111.555)"
                                         >
-                                            b
+                                            {'b'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.976904,0.213679,-0.213679,0.976904,85.3153,-145.098)">
                                         <text
                                             x="713.861px"
                                             y="322.108px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.976904,0.213679,-0.213679,0.976904,85.3153,-145.098)"
                                         >
-                                            l
+                                            {'l'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.9707,0.240294,-0.240294,0.9707,99.1834,-164.571)">
                                         <text
                                             x="724.432px"
                                             y="324.425px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.9707,0.240294,-0.240294,0.9707,99.1834,-164.571)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.95904,0.283271,-0.283271,0.95904,122.71,-194.826)">
                                         <text
                                             x="735.043px"
                                             y="326.906px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.95904,0.283271,-0.283271,0.95904,122.71,-194.826)"
                                         >
-                                            c
+                                            {'c'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.928943,0.370224,-0.370224,0.928943,179.635,-260.821)">
                                         <text
                                             x="769.284px"
                                             y="337.558px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.928943,0.370224,-0.370224,0.928943,179.635,-260.821)"
                                         >
-                                            o
+                                            {'o'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.906823,0.421512,-0.421512,0.906823,220.24,-301.961)">
                                         <text
                                             x="793.122px"
                                             y="347.176px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.906823,0.421512,-0.421512,0.906823,220.24,-301.961)"
                                         >
-                                            r
+                                            {'r'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.884617,0.466319,-0.466319,0.884617,258.35,-336.026)">
                                         <text
                                             x="808.197px"
                                             y="354.045px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.884617,0.466319,-0.466319,0.884617,258.35,-336.026)"
                                         >
-                                            g
+                                            {'g'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.853235,0.521526,-0.521526,0.853235,313.123,-379.863)">
                                         <text
                                             x="831.481px"
                                             y="366.407px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.853235,0.521526,-0.521526,0.853235,313.123,-379.863)"
                                         >
-                                            a
+                                            {'a'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.818408,0.574638,-0.574638,0.818408,372.597,-420.875)">
                                         <text
                                             x="852.215px"
                                             y="379.092px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.818408,0.574638,-0.574638,0.818408,372.597,-420.875)"
                                         >
-                                            n
+                                            {'n'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.791546,0.61111,-0.61111,0.791546,422.668,-451.369)">
                                         <text
                                             x="872.957px"
                                             y="393.868px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.791546,0.61111,-0.61111,0.791546,422.668,-451.369)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.764336,0.644818,-0.644818,0.764336,465.996,-474.158)">
                                         <text
                                             x="881.688px"
                                             y="400.443px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.764336,0.644818,-0.644818,0.764336,465.996,-474.158)"
                                         >
-                                            z
+                                            {'z'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.72569,0.688022,-0.688022,0.72569,532.771,-504.992)">
                                         <text
                                             x="899.694px"
                                             y="415.649px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.72569,0.688022,-0.688022,0.72569,532.771,-504.992)"
                                         >
-                                            a
+                                            {'a'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.689643,0.72415,-0.72415,0.689643,597.855,-530.004)">
                                         <text
                                             x="917.25px"
                                             y="432.479px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.689643,0.72415,-0.72415,0.689643,597.855,-530.004)"
                                         >
-                                            t
+                                            {'t'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.664691,0.747118,-0.747118,0.664691,643.064,-544.605)">
                                         <text
                                             x="928.262px"
                                             y="444.119px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.664691,0.747118,-0.747118,0.664691,643.064,-544.605)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.630007,0.77659,-0.77659,0.630007,697.307,-559.301)">
                                         <text
                                             x="935.62px"
                                             y="452.148px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.630007,0.77659,-0.77659,0.630007,697.307,-559.301)"
                                         >
-                                            o
+                                            {'o'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.579078,0.815272,-0.815272,0.579078,785.581,-577.259)">
                                         <text
                                             x="951.829px"
                                             y="472.156px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.579078,0.815272,-0.815272,0.579078,785.581,-577.259)"
                                         >
-                                            n
+                                            {'n'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.52858,0.848883,-0.848883,0.52858,874.171,-588.098)">
                                         <text
                                             x="966.578px"
                                             y="493.009px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.52858,0.848883,-0.848883,0.52858,874.171,-588.098)"
                                         >
-                                            s
+                                            {'s'}
                                         </text>
                                     </g>
                                 </g>
-                                <g className="interactive" onClick={() => this.handleDiagramClick('science')}>
-                                    <path
-                                        d="M433.5 352.451C344.702 403.718 290 498.465 290 601s54.702 197.282 143.5 248.549l83.23-144.158c-37.295-21.533-60.27-61.326-60.27-104.391 0-43.065 22.975-82.858 60.27-104.391L433.5 352.451z"
-                                        style={{ fill: "url(#c)" }}
-                                        transform="matrix(1.73663,-8.31795e-33,8.31795e-33,1.73663,-503.623,-542.127)"
-                                    />
-                                    <g
-                                        id="science"
-                                        transform="matrix(1,-4.78971e-33,4.78971e-33,1,-191.174,-196.916)"
-                                    >
+                            </g>
+                            <g id="science"
+                               className="interactive"
+                               onClick={() => this.handleDiagramClick('quintuple-helix-collaboration')}>
+                                <path
+                                    id="background-science"
+                                    d="M66.775,750.794c89.033,154.209 253.572,249.206 431.638,249.206c178.066,0 342.605,-94.997 431.638,-249.206l-250.35,-144.54c-37.394,64.768 -106.501,104.667 -181.288,104.667c-74.788,0 -143.894,-39.899 -181.288,-104.667l-250.35,144.54Z"
+                                    style={{
+                                        fill: 'url(#_Radial3)',
+                                    }}
+                                />
+                                <g
+                                    id="science1"
+                                    transform="matrix(-4.78971e-33,-1,1,-4.78971e-33,-200.091,1191.17)"
+                                >
+                                    <g transform="matrix(-0.171753,0.98514,-0.98514,-0.171753,956.848,428.594)">
                                         <text
                                             x="298.256px"
                                             y="616.527px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.171753,0.98514,-0.98514,-0.171753,956.848,428.594)"
                                         >
-                                            S
+                                            {'S'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.107467,0.994209,-0.994209,-0.107467,964.985,420.807)">
                                         <text
                                             x="293.607px"
                                             y="643.553px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.107467,0.994209,-0.994209,-0.107467,964.985,420.807)"
                                         >
-                                            c
+                                            {'c'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.0594907,0.998229,-0.998229,-0.0594907,976.578,418.748)">
                                         <text
                                             x="291.021px"
                                             y="669.429px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.0594907,0.998229,-0.998229,-0.0594907,976.578,418.748)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.0117173,0.999931,-0.999931,-0.0117173,974.994,399.301)">
                                         <text
                                             x="290.172px"
                                             y="681.469px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.0117173,0.999931,-0.999931,-0.0117173,974.994,399.301)"
                                         >
-                                            e
+                                            {'e'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.0514605,0.998675,-0.998675,0.0514605,980.614,380.722)">
                                         <text
                                             x="289.884px"
                                             y="706.583px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.0514605,0.998675,-0.998675,0.0514605,980.614,380.722)"
                                         >
-                                            n
+                                            {'n'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.113756,0.993509,-0.993509,0.113756,985.433,359.468)">
                                         <text
                                             x="291.228px"
                                             y="732.086px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.113756,0.993509,-0.993509,0.113756,985.433,359.468)"
                                         >
-                                            c
+                                            {'c'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.17479,0.984606,-0.984606,0.17479,987.198,334.586)">
                                         <text
                                             x="293.992px"
                                             y="756.234px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.17479,0.984606,-0.984606,0.17479,987.198,334.586)"
                                         >
-                                            e
+                                            {'e'}
                                         </text>
                                     </g>
                                 </g>
-                                <g className="interactive" onClick={() => this.handleDiagramClick('private-organizations')} id="private orgs">
-                                    <path
-                                        d="M433.5 849.549A286.997 286.997 0 0 0 577 888c158.506 0 287-128.494 287-287H697.54c0 66.572-53.968 120.54-120.54 120.54-21.159 0-41.946-5.57-60.27-16.149L433.5 849.549z"
-                                        style={{ fill: "url(#d)" }}
-                                        id="background-private organizations"
-                                        transform="matrix(1.73663,-8.31795e-33,8.31795e-33,1.73663,-503.623,-542.127)"
-                                    />
-                                    <g
-                                        id="private organizations"
-                                        transform="matrix(1,-4.78971e-33,4.78971e-33,1,-134.881,-99.4128)"
-                                    >
+                            </g>
+                            <g id="private-orgs"
+                               className="interactive"
+                               onClick={() => this.handleDiagramClick('quintuple-helix-collaboration')}>
+                                <path
+                                    id="background-private-organizations"
+                                    d="M930.051,750.794c43.745,-75.769 66.775,-161.717 66.775,-249.207c0,-275.266 -223.148,-498.413 -498.413,-498.413l0,289.08c115.611,0 209.333,93.722 209.333,209.333c0,36.746 -9.672,72.844 -28.045,104.667l250.35,144.54Z"
+                                    style={{
+                                        fill: 'url(#_Radial4)',
+                                    }}
+                                />
+                                <g
+                                    id="private-organizations"
+                                    transform="matrix(-4.78971e-33,-1,1,-4.78971e-33,-102.587,1134.88)"
+                                >
+                                    <g transform="matrix(-0.52826,0.849083,-0.849083,-0.52826,2177.22,390.025)">
                                         <text
                                             x="980.264px"
                                             y="799.831px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.52826,0.849083,-0.849083,-0.52826,2177.22,390.025)"
                                         >
-                                            P
+                                            {'P'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.574791,0.8183,-0.8183,-0.574791,2194.27,505.695)">
                                         <text
                                             x="965.75px"
                                             y="822.945px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.574791,0.8183,-0.8183,-0.574791,2194.27,505.695)"
                                         >
-                                            r
+                                            {'r'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.600397,0.799702,-0.799702,-0.600397,2199.23,574.028)">
                                         <text
                                             x="956.199px"
                                             y="836.482px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.600397,0.799702,-0.799702,-0.600397,2199.23,574.028)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.634635,0.772812,-0.772812,-0.634635,2205.78,647.623)">
                                         <text
                                             x="949.803px"
                                             y="845.23px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.634635,0.772812,-0.772812,-0.634635,2205.78,647.623)"
                                         >
-                                            v
+                                            {'v'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.677951,0.735107,-0.735107,-0.677951,2203.36,761.541)">
                                         <text
                                             x="934.863px"
                                             y="863.413px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.677951,0.735107,-0.735107,-0.677951,2203.36,761.541)"
                                         >
-                                            a
+                                            {'a'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.714575,0.699559,-0.699559,-0.714575,2190.9,868.508)">
                                         <text
                                             x="918.272px"
                                             y="881.206px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.714575,0.699559,-0.699559,-0.714575,2190.9,868.508)"
                                         >
-                                            t
+                                            {'t'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.749345,0.66218,-0.66218,-0.749345,2177.61,960.438)">
                                         <text
                                             x="907.025px"
                                             y="892.364px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.749345,0.66218,-0.66218,-0.749345,2177.61,960.438)"
                                         >
-                                            e
+                                            {'e'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.806946,0.590625,-0.590625,-0.806946,2129.9,1136.19)">
                                         <text
                                             x="879.261px"
                                             y="916.189px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.806946,0.590625,-0.590625,-0.806946,2129.9,1136.19)"
                                         >
-                                            o
+                                            {'o'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.838481,0.544931,-0.544931,-0.838481,2085.67,1244.43)">
                                         <text
                                             x="858.406px"
                                             y="931.315px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.838481,0.544931,-0.544931,-0.838481,2085.67,1244.43)"
                                         >
-                                            r
+                                            {'r'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.863492,0.504363,-0.504363,-0.863492,2049.32,1325.34)">
                                         <text
                                             x="845.306px"
                                             y="939.997px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.863492,0.504363,-0.504363,-0.863492,2049.32,1325.34)"
                                         >
-                                            g
+                                            {'g'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.893736,0.448593,-0.448593,-0.893736,1985.27,1436.14)">
                                         <text
                                             x="822.536px"
                                             y="953.209px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.893736,0.448593,-0.448593,-0.893736,1985.27,1436.14)"
                                         >
-                                            a
+                                            {'a'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.920631,0.390434,-0.390434,-0.920631,1914.36,1539.11)">
                                         <text
                                             x="800.743px"
                                             y="964.134px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.920631,0.390434,-0.390434,-0.920631,1914.36,1539.11)"
                                         >
-                                            n
+                                            {'n'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.937569,0.3478,-0.3478,-0.937569,1844.58,1616.76)">
                                         <text
                                             x="777.184px"
                                             y="973.934px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.937569,0.3478,-0.3478,-0.937569,1844.58,1616.76)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.95184,0.306594,-0.306594,-0.95184,1797,1673.38)">
                                         <text
                                             x="767.074px"
                                             y="977.826px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.95184,0.306594,-0.306594,-0.95184,1797,1673.38)"
                                         >
-                                            z
+                                            {'z'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.968216,0.250116,-0.250116,-0.968216,1711.94,1752.55)">
                                         <text
                                             x="744.614px"
                                             y="985.048px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.968216,0.250116,-0.250116,-0.968216,1711.94,1752.55)"
                                         >
-                                            a
+                                            {'a'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.979855,0.199708,-0.199708,-0.979855,1625.41,1818.05)">
                                         <text
                                             x="721.009px"
                                             y="991.005px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.979855,0.199708,-0.199708,-0.979855,1625.41,1818.05)"
                                         >
-                                            t
+                                            {'t'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.986129,0.16598,-0.16598,-0.986129,1565.78,1857.46)">
                                         <text
                                             x="705.277px"
                                             y="994.156px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.986129,0.16598,-0.16598,-0.986129,1565.78,1857.46)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.992698,0.120628,-0.120628,-0.992698,1504.19,1901.19)">
                                         <text
                                             x="694.553px"
                                             y="996.123px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.992698,0.120628,-0.120628,-0.992698,1504.19,1901.19)"
                                         >
-                                            o
+                                            {'o'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.998366,0.0571395,-0.0571395,-0.998366,1394.05,1958.56)">
                                         <text
                                             x="669.026px"
                                             y="999.208px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.998366,0.0571395,-0.0571395,-0.998366,1394.05,1958.56)"
                                         >
-                                            n
+                                            {'n'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.999997,-0.0025704,0.0025704,-0.999997,1284.55,2002.88)">
                                         <text
                                             x="643.564px"
                                             y="1000.62px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.999997,-0.0025704,0.0025704,-0.999997,1284.55,2002.88)"
                                         >
-                                            s
+                                            {'s'}
                                         </text>
                                     </g>
                                 </g>
                             </g>
-                            <g className="interactive" onClick={() => this.handleDiagramClick('local-community')}
-                                id="area local community"
-                                transform="matrix(0.339659,-0.940549,0.940549,0.339659,-138.121,800.362)"
+                        </g>
+                        <g id="area-local-community"
+                           className="interactive"
+                           onClick={() => this.handleDiagramClick('quintuple-helix-collaboration')}>
+                            <path
+                                id="background-local-community"
+                                d="M218.915,372.303l19.203,-38.844l42.819,-81.089l-31.207,-15.427l1.767,-3.573l32.708,16.169l99.24,-90.194l96.827,-22.54l1.635,-48.128l8.723,1.206l-1.055,47.605l102.631,9.161c-6.933,-38.85 -9.966,-58.109 -9.101,-57.776c0.866,0.333 3.737,0.411 8.614,0.232l10.747,59.169l27.733,10.604l39.173,-11.474l7.248,11.167l-33.876,9.614l104.04,133.067l30.793,-17.476l5.112,5.041l-31.603,18.978l91.734,117.684l12.785,42.686l-18.254,119.199l-15.785,42.423l28.943,6.405l-5.837,11.809l-28.91,-5.619l-74.282,100.051l-68.289,50.201l28.738,29.805c-5.54,2.531 -8.875,3.939 -10.005,4.225c-1.129,0.286 -11.242,-9.326 -30.341,-28.834l-24.05,6.089l-10.218,39.774c-3.67,2.917 -5.425,2.049 -5.266,-2.604c0.159,-4.651 2.36,-16.762 6.599,-36.33l-129.653,-2.261l-144.809,0.356l-7.304,35.368l-10.487,-1.536l9.611,-39.012l-74.032,-33.869l-61.744,-30.522l-15.055,25.184l-10.007,-4.948l15.278,-30.907l-57.426,-84.843l-37.193,8.242l-2.069,-9.534l35.226,-9.099l-0.371,-8.771l-35.916,4.07l-1.162,-8.772l36.626,-5.955l-2.66,-62.755l11.801,-94.786l-24.932,-12.325l2.376,-4.807l24.933,12.324l9.757,-19.738l-26.179,-32.076l8.334,-7.02l25.15,30.125l46.609,-31.957l-29.439,-38.268l9.077,-7.091l25.927,32.727Z"
+                                style={{
+                                    fill: '#d4ddc2',
+                                }}
+                            />
+                            <path
+                                d="M490.63,89.883l-1.055,47.605l102.631,9.161l-0.639,-3.585l-0.616,-3.47l-0.592,-3.355l-0.57,-3.24l-0.547,-3.126l-0.525,-3.011l-0.501,-2.896l-0.242,-1.405l-0.237,-1.376l-0.23,-1.348l-0.226,-1.319l-0.219,-1.29l-0.213,-1.261l-0.208,-1.233l-0.202,-1.204l-0.197,-1.176l-0.191,-1.146l-0.185,-1.118l-0.179,-1.09l-0.174,-1.06l-0.167,-1.032l-0.163,-1.003l-0.156,-0.975l-0.151,-0.946l-0.145,-0.917l-0.139,-0.888l-0.134,-0.86l-0.128,-0.831l-0.122,-0.802l-0.117,-0.774l-0.11,-0.745l-0.105,-0.716l-0.1,-0.687l-0.093,-0.659l-0.088,-0.63l-0.083,-0.602l-0.076,-0.572l-0.071,-0.544l-0.065,-0.516l-0.059,-0.486l-0.054,-0.458l-0.048,-0.43l-0.042,-0.4l-0.037,-0.372l-0.016,-0.175l-0.015,-0.168l-0.013,-0.161l-0.012,-0.154l-0.01,-0.146l-0.009,-0.139l-0.008,-0.132l-0.006,-0.125l-0.005,-0.118l-0.003,-0.111l-0.002,-0.103l0,-0.096l0.001,-0.089l0.002,-0.082l0.004,-0.075l0.005,-0.068l0.007,-0.06l0.008,-0.053l0.01,-0.046l0.005,-0.021l0.006,-0.018l0.006,-0.017l0.006,-0.015l0.007,-0.013l0.007,-0.011l0.007,-0.01l0.008,-0.008l0.008,-0.006l0.009,-0.004l0.009,-0.002l0.009,-0.001l0.01,0.002l0.01,0.003l0.042,0.015l0.045,0.015l0.048,0.015l0.051,0.014l0.053,0.014l0.057,0.014l0.06,0.013l0.062,0.013l0.066,0.012l0.069,0.012l0.071,0.012l0.074,0.011l0.078,0.011l0.08,0.011l0.169,0.02l0.181,0.018l0.193,0.017l0.205,0.016l0.216,0.014l0.228,0.012l0.24,0.011l0.252,0.01l0.263,0.008l0.275,0.006l0.287,0.005l0.298,0.004l0.311,0.002l0.322,0l0.334,-0.001l0.345,-0.002l0.357,-0.004l0.369,-0.005l0.381,-0.007l0.393,-0.009l0.404,-0.01l0.416,-0.011l0.428,-0.013l0.439,-0.015l0.452,-0.016l10.747,59.169l27.733,10.604l39.173,-11.474l7.248,11.167l-33.876,9.614l104.04,133.067l30.793,-17.476l5.112,5.041l-31.603,18.978l91.734,117.684l12.785,42.686l-18.254,119.199l-15.785,42.423l28.943,6.405l-5.837,11.809l-28.91,-5.619l-74.282,100.051l-68.289,50.201l28.738,29.805l-1.013,0.462l-0.961,0.435l-0.91,0.408l-0.858,0.383l-0.409,0.181l-0.397,0.175l-0.384,0.168l-0.37,0.162l-0.358,0.155l-0.345,0.148l-0.332,0.142l-0.319,0.135l-0.307,0.129l-0.293,0.122l-0.28,0.116l-0.268,0.109l-0.254,0.102l-0.242,0.096l-0.228,0.09l-0.216,0.082l-0.203,0.076l-0.19,0.07l-0.177,0.063l-0.164,0.056l-0.151,0.05l-0.138,0.043l-0.125,0.037l-0.058,0.016l-0.055,0.014l-0.013,0.003l-0.015,0.002l-0.015,0.001l-0.016,0l-0.017,-0.001l-0.018,-0.001l-0.018,-0.003l-0.02,-0.003l-0.041,-0.01l-0.045,-0.013l-0.047,-0.017l-0.052,-0.02l-0.054,-0.024l-0.058,-0.028l-0.061,-0.032l-0.064,-0.034l-0.068,-0.039l-0.071,-0.042l-0.074,-0.046l-0.077,-0.05l-0.081,-0.053l-0.084,-0.056l-0.087,-0.061l-0.091,-0.064l-0.094,-0.067l-0.097,-0.072l-0.101,-0.075l-0.103,-0.078l-0.107,-0.082l-0.111,-0.086l-0.113,-0.089l-0.117,-0.093l-0.121,-0.097l-0.123,-0.1l-0.257,-0.211l-0.27,-0.226l-0.283,-0.24l-0.297,-0.255l-0.309,-0.27l-0.323,-0.283l-0.336,-0.299l-0.349,-0.312l-0.362,-0.328l-0.376,-0.342l-0.388,-0.356l-0.402,-0.371l-0.415,-0.385l-0.428,-0.4l-0.441,-0.414l-0.454,-0.429l-0.468,-0.443l-0.48,-0.458l-0.494,-0.472l-0.507,-0.487l-0.52,-0.501l-0.534,-0.516l-0.546,-0.53l-0.56,-0.545l-0.572,-0.559l-0.586,-0.574l-0.6,-0.588l-0.612,-0.603l-0.625,-0.617l-0.639,-0.632l-0.652,-0.647l-0.665,-0.66l-0.678,-0.676l-0.691,-0.689l-0.704,-0.705l-0.718,-0.718l-0.731,-0.734l-0.744,-0.747l-0.757,-0.763l-0.77,-0.776l-0.783,-0.791l-0.797,-0.806l-0.81,-0.82l-0.822,-0.835l-0.836,-0.849l-0.85,-0.864l-0.862,-0.878l-1.764,-1.8l-24.05,6.089l-10.218,39.774l-0.171,0.134l-0.167,0.129l-0.165,0.123l-0.163,0.117l-0.159,0.112l-0.079,0.053l-0.078,0.053l-0.077,0.051l-0.076,0.049l-0.076,0.049l-0.075,0.047l-0.075,0.045l-0.074,0.044l-0.073,0.043l-0.072,0.041l-0.072,0.04l-0.071,0.039l-0.07,0.037l-0.069,0.036l-0.069,0.034l-0.068,0.033l-0.068,0.032l-0.067,0.03l-0.066,0.029l-0.065,0.027l-0.065,0.026l-0.064,0.025l-0.063,0.023l-0.062,0.022l-0.062,0.021l-0.061,0.019l-0.061,0.018l-0.059,0.016l-0.059,0.015l-0.059,0.014l-0.057,0.012l-0.057,0.011l-0.057,0.009l-0.055,0.008l-0.055,0.007l-0.054,0.005l-0.053,0.004l-0.053,0.003l-0.052,0.001l-0.051,0l-0.051,-0.002l-0.05,-0.003l-0.049,-0.005l-0.049,-0.005l-0.047,-0.008l-0.048,-0.008l-0.046,-0.01l-0.046,-0.011l-0.045,-0.013l-0.044,-0.014l-0.044,-0.016l-0.042,-0.017l-0.043,-0.018l-0.041,-0.019l-0.041,-0.022l-0.04,-0.022l-0.039,-0.024l-0.039,-0.025l-0.038,-0.027l-0.037,-0.027l-0.037,-0.03l-0.036,-0.031l-0.035,-0.032l-0.034,-0.033l-0.034,-0.035l-0.033,-0.036l-0.033,-0.038l-0.031,-0.039l-0.031,-0.041l-0.031,-0.041l-0.029,-0.044l-0.029,-0.044l-0.028,-0.046l-0.028,-0.048l-0.026,-0.048l-0.026,-0.05l-0.026,-0.052l-0.024,-0.053l-0.024,-0.054l-0.024,-0.056l-0.022,-0.057l-0.022,-0.058l-0.021,-0.06l-0.021,-0.061l-0.019,-0.063l-0.02,-0.064l-0.018,-0.065l-0.018,-0.067l-0.016,-0.068l-0.017,-0.07l-0.015,-0.071l-0.015,-0.072l-0.014,-0.074l-0.014,-0.075l-0.012,-0.076l-0.012,-0.078l-0.012,-0.079l-0.01,-0.081l-0.01,-0.082l-0.01,-0.083l-0.008,-0.085l-0.008,-0.086l-0.007,-0.088l-0.007,-0.089l-0.005,-0.09l-0.005,-0.092l-0.005,-0.093l-0.003,-0.094l-0.005,-0.194l-0.003,-0.198l0.001,-0.204l0.003,-0.21l0.006,-0.216l0.009,-0.223l0.012,-0.234l0.015,-0.246l0.018,-0.256l0.021,-0.267l0.024,-0.278l0.026,-0.29l0.03,-0.3l0.033,-0.31l0.036,-0.322l0.039,-0.333l0.042,-0.344l0.045,-0.354l0.047,-0.366l0.051,-0.376l0.054,-0.388l0.057,-0.398l0.059,-0.409l0.063,-0.421l0.066,-0.431l0.069,-0.442l0.071,-0.453l0.075,-0.463l0.078,-0.475l0.081,-0.486l0.083,-0.497l0.087,-0.507l0.09,-0.519l0.092,-0.529l0.096,-0.54l0.099,-0.552l0.101,-0.562l0.105,-0.573l0.107,-0.584l0.111,-0.595l0.114,-0.606l0.116,-0.617l0.12,-0.628l0.122,-0.638l0.126,-0.65l0.128,-0.66l0.132,-0.672l0.134,-0.682l0.138,-0.694l0.14,-0.704l0.144,-0.715l0.146,-0.726l0.15,-0.737l0.308,-1.507l0.32,-1.55l0.331,-1.594l0.344,-1.638l0.356,-1.682l0.367,-1.725l0.38,-1.769l0.391,-1.813l-129.653,-2.261l-144.809,0.356l-7.304,35.368l-10.487,-1.536l9.611,-39.012l-74.032,-33.869l-61.744,-30.522l-15.055,25.184l-10.007,-4.948l15.278,-30.907l-57.426,-84.843l-37.193,8.242l-2.069,-9.534l35.226,-9.099l-0.371,-8.771l-35.916,4.07l-1.162,-8.772l36.626,-5.955l-2.66,-62.755l11.801,-94.786l-24.932,-12.325l2.376,-4.807l24.933,12.324l9.757,-19.738l-26.179,-32.076l8.334,-7.02l25.15,30.125l46.609,-31.957l-29.439,-38.268l9.077,-7.091l25.927,32.727l19.203,-38.844l42.819,-81.089l-31.207,-15.427l1.767,-3.573l32.708,16.169l99.24,-90.194l96.827,-22.54l1.635,-48.128l8.723,1.206Zm-103.825,75.867l-100.393,91.243l-42.06,79.652l-19.162,38.76l-9.561,1.012l3.27,4.25l-1.59,10.042l-49.712,34.083l0.11,0.134l-11.753,23.777l-1.447,0.49l-11.988,96.288l2.898,68.381l-4.209,0.684l4.398,3.765l0.492,11.606l0.053,-0.011l62.376,92.156l-1.22,2.468l0.231,-0.386l67.444,33.339l79.208,36.237l-0.526,2.135l145.384,-0.358l129.723,2.263l2.354,2.97l0.662,-2.577l31.978,-8.097l4.579,4.672l0.04,0.04l0.661,-7.774l67.442,-49.578l76.283,-102.747l6.957,1.352l-4.721,-8.675l15.534,-41.751l17.907,-116.932l-11.956,-39.917l-90.926,-116.647l0.438,-2.355l-1.015,0.576l-107.758,-137.823l3.023,-9.27l-10.35,3.032l-33.619,-12.855l-0.745,-4.099l-3.956,4.316l-109.151,-9.742l0.008,-0.392l-95.635,22.263Z"
+                                style={{
+                                    fill: '#dd8817',
+                                }}
+                            />
+                            <g
+                                id="local-community"
+                                transform="matrix(0.707107,0.707107,-0.707107,0.707107,423.202,-530.324)"
                             >
-                                <g
-                                    id="background-local community"
-                                    transform="matrix(1.18598,0.13406,0.13406,-1.18598,-1268.76,1742.64)"
-                                >
-                                    <path
-                                        d="M1346.38 1461.01l36.31-.01 76.8-2.05v29.17h3.34v-30.57l104.59-41.05 52.88-64.36 36.76 16.64 2.33-6.99-36.15-16.89 31.23-80.48c26.6 19.63 39.94 29.06 40.01 28.28.07-.77 1.08-2.96 3.03-6.55l-40.45-30.04 2.33-24.77 23.16-25.16-5.69-9.59-19.8 21.87-61.32-127.55 24.56-16.64-1.89-5.71-25.99 16.69-54.33-112.595-27.31-25.451-96.31-30.548-37.72-3.896 5.93-24.117h-11.03l-6.52 23.8-102.72 18.643-63.06 32.652-11.72-32.651c-3.96 3.221-6.25 5.203-6.89 5.945-.63.742 2.83 11.907 10.39 33.496l-13.5 15.802-33.67-7.093c-3.55 1.674-3.55 3.314 0 4.922 3.56 1.608 13.47 4.451 29.74 8.532l-46.44 98.219-54.03 108.63-29.28-7.64-2.74 8.44 32.87 7.27-2.05 68.18v57.71l-24.51 1.95v9.36h28.89l42.4 74.63-20 24.88 6.4 5.09 19.91-23.08 6.45 3.54-16.39 25.46 6.16 4.13 18.07-25.3 46.14 25.3 75.58 26.33v23.3h4.49v-23.3h18.45l14.37 31.58 8.37-3.66-13.29-30.07 41.31-23.15 17.81 36.32 8.7-4.18-14.96-31.62z"
-                                        style={{ fill: "rgb(212,221,194)" }}
-                                    />
-                                    <path
-                                        d="M1659.39 1361.79l-36.15-16.89 31.23-80.48 2.45 1.81 2.38 1.75 2.3 1.69 2.22 1.63 2.15 1.57 2.06 1.51 1.99 1.46.97.7.94.69.93.67.91.66.88.64.87.63.85.62.83.6.81.58.79.57.77.55.75.54.74.53.71.5.69.5.68.48.65.46.63.45.62.44.6.42.57.4.56.39.54.38.52.36.5.34.48.33.46.31.44.3.42.29.4.27.38.25.36.24.35.23.32.21.31.2.28.18.27.16.12.08.12.07.12.07.11.07.11.06.1.06.09.05.1.05.08.05.08.05.08.04.07.03.07.03.06.03.06.03.05.02.05.02.04.01.04.01h.02l.01.01H1694.44l.01-.01h.01l.01-.01h.01v-.03l.01-.03v-.04l.01-.04.01-.05.01-.04.01-.05.01-.05.01-.05.02-.06.02-.05.01-.06.02-.06.02-.06.02-.07.05-.13.06-.14.05-.15.07-.17.07-.16.07-.18.08-.18.09-.2.09-.2.1-.2.1-.22.11-.23.11-.23.12-.24.13-.25.13-.26.13-.27.15-.27.14-.29.15-.29.16-.3.16-.31.17-.31.18-.33.18-.33-40.45-30.04 2.33-24.77 23.16-25.16-5.69-9.59-19.8 21.87-61.32-127.55 24.56-16.64-1.89-5.71-25.99 16.69-54.33-112.595-27.31-25.451-96.31-30.548-37.72-3.896 5.93-24.117h-11.03l-6.52 23.8-102.72 18.643-63.06 32.652-11.72-32.651-.72.589-.68.561-.65.531-.61.502-.28.241-.28.233-.27.226-.26.218-.25.211-.24.204-.23.197-.22.189-.21.183-.2.175-.19.167-.18.161-.17.153-.17.146-.15.138-.14.131-.13.124-.12.117-.12.11-.1.102-.1.095-.08.088-.07.08-.04.038-.03.035v.01l-.01.01-.01.011v.012l-.01.013-.01.014v.031l-.01.034-.01.038v.043l-.01.046v.222l.01.065v.069l.01.073.01.076.01.081.01.084.01.088.02.092.01.095.02.1.02.103.02.107.02.111.02.115.03.118.02.123.03.126.03.13.07.271.07.287.07.302.08.317.09.333.09.347.1.363.11.379.11.393.12.409.12.424.13.44.13.454.14.47.15.485.16.501.16.516.16.531.17.546.18.561.18.577.19.592.2.608.2.622.21.638.21.653.22.669.23.683.23.699.23.714.25.73.25.745.25.76.26.775.27.791.27.805.28.821.29.837.29.852.3.866.3.883.31.897.32.913.32.928.33.943.33.959.34.973.69 1.994-13.5 15.802-33.67-7.093-.16.078-.16.078-.15.079-.15.078-.14.078-.07.039-.07.04-.07.039-.07.039-.06.039-.06.039-.06.039-.07.039-.05.039-.06.039-.06.039-.05.039-.06.039-.05.039-.05.039-.05.039-.05.038-.05.039-.04.039-.05.039-.04.039-.05.039-.04.039-.04.038-.03.039-.04.039-.04.039-.03.039-.04.038-.03.039-.03.039-.03.039-.02.038-.03.039-.03.039-.02.038-.02.039-.03.039-.02.038-.01.039-.02.039-.02.038-.01.039-.02.038-.01.039-.01.039-.01.038-.01.039v.038l-.01.039v.038l-.01.039v.153l.01.039v.038l.01.039v.038l.01.038.01.039.01.038.01.039.02.038.01.038.02.038.02.039.01.038.02.038.03.039.02.038.02.038.03.038.03.038.02.039.03.038.03.038.03.038.04.038.03.038.04.038.04.039.03.038.04.038.04.038.05.038.04.038.05.038.04.038.05.038.05.038.05.038.05.038.05.038.06.038.05.038.06.038.06.038.06.038.06.037.06.038.06.038.06.038.07.038.07.038.07.037.07.038.14.076.15.075.15.076.16.075.16.076.17.076.19.078.19.08.19.082.21.083.22.085.23.088.23.089.25.09.26.093.26.094.27.097.29.098.29.099.3.102.31.103.32.106.33.107.34.109.35.11.36.113.36.114.38.116.38.118.4.12.4.121.42.124.42.125.43.127.44.129.45.13.46.133.47.134.48.136.49.138.5.139.5.142.52.143.52.145.54.147.54.149.55.15.57.153.57.154.58.156.59.157.6.16.61.161 1.25.329 1.28.335 1.32.343 1.36.35 1.39.357 1.44.365 1.46.371 1.51.379-46.44 98.219-54.03 108.63-29.28-7.64-2.74 8.44 32.87 7.27-2.05 68.18v57.71l-24.51 1.95v9.36h28.89l42.4 74.63-20 24.88 6.4 5.09 19.91-23.08 6.45 3.54-16.39 25.46 6.16 4.13 18.07-25.3 46.14 25.3 75.58 26.33v23.3h4.49v-23.3h18.45l14.37 31.58 8.37-3.66-13.29-30.07 41.31-23.15 17.81 36.32 8.7-4.18-14.96-31.62 36.31-.01 76.8-2.05v29.17h3.34v-30.57l104.59-41.05 52.88-64.36 36.76 16.64 2.33-6.99zm-95.53 49.81l-105.81 41.52-75.44 2.02h-36.23l-4.31 6.8-1.98-4.03-8.13-2.53-44.06 24.68-.06-.13h-22.22l-.9.9-76.78-26.75-50.28-27.56-2.08 2.91-1.19-4.71-8.54-4.67.03-.04-46.06-81.07h-2.3l.37-.03v-63.03l2.2-72.95-1.8-.4 54.25-109.06 46.46-98.272-1.35-2.871 2.18.46 17.95-21.012-1.8-5.174-.02-.045 6.08 2.39 62.28-32.246 105.5-19.146 1.56-5.728 4.77 6.768 37.12 3.834 94.48 29.967 25.54 23.801 53.85 111.604 1.93.55-.81.54 63.51 132.11 8.09 1.17-6.12 6.65-2.83 30.03 2.8 2.08-4.71 1.37-33.21 85.59.3.14-52.23 63.57z"
-                                        style={{ fill: "rgb(221,136,23)" }}
-                                    />
-                                </g>
-                                <g
-                                    id="local community"
-                                    transform="matrix(-0.424893,0.905243,-0.905243,-0.424893,1442.23,75.9725)"
-                                >
+                                <g transform="matrix(0.219051,-0.975713,0.975713,0.219051,-214.674,976.35)">
                                     <text
                                         x="502.586px"
                                         y="622.281px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.219051,-0.975713,0.975713,0.219051,-214.674,976.35)"
                                     >
-                                        L
+                                        {'L'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.301308,-0.953527,0.953527,0.301308,-216.112,902.561)">
                                     <text
                                         x="507.821px"
                                         y="598.748px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.301308,-0.953527,0.953527,0.301308,-216.112,902.561)"
                                     >
-                                        o
+                                        {'o'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.384492,-0.923129,0.923129,0.384492,-212.667,829.412)">
                                     <text
                                         x="515.635px"
                                         y="574.183px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.384492,-0.923129,0.923129,0.384492,-212.667,829.412)"
                                     >
-                                        c
+                                        {'c'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.459799,-0.888023,0.888023,0.459799,-206.448,764.295)">
                                     <text
                                         x="524.979px"
                                         y="551.834px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.459799,-0.888023,0.888023,0.459799,-206.448,764.295)"
                                     >
-                                        a
+                                        {'a'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.515248,-0.857041,0.857041,0.515248,-194.489,716.784)">
                                     <text
                                         x="536.393px"
                                         y="530.321px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.515248,-0.857041,0.857041,0.515248,-194.489,716.784)"
                                     >
-                                        l
+                                        {'l'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.5999,-0.800075,0.800075,0.5999,-189.657,643.134)">
                                     <text
                                         x="548.205px"
                                         y="511.194px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.5999,-0.800075,0.800075,0.5999,-189.657,643.134)"
                                     >
-                                        c
+                                        {'c'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.666815,-0.745223,0.745223,0.666815,-178.977,583.224)">
                                     <text
                                         x="562.75px"
                                         y="491.768px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.666815,-0.745223,0.745223,0.666815,-178.977,583.224)"
                                     >
-                                        o
+                                        {'o'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.744477,-0.667648,0.667648,0.744477,-167.261,507.735)">
                                     <text
                                         x="579.692px"
                                         y="472.383px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.744477,-0.667648,0.667648,0.744477,-167.261,507.735)"
                                     >
-                                        m
+                                        {'m'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.825156,-0.564905,0.564905,0.825156,-146.423,421.507)">
                                     <text
                                         x="607.714px"
                                         y="447.292px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.825156,-0.564905,0.564905,0.825156,-146.423,421.507)"
                                     >
-                                        m
+                                        {'m'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.882111,-0.471041,0.471041,0.882111,-125.537,351.196)">
                                     <text
                                         x="638.858px"
                                         y="426.398px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.882111,-0.471041,0.471041,0.882111,-125.537,351.196)"
                                     >
-                                        u
+                                        {'u'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.92068,-0.390317,0.390317,0.92068,-109.309,290.986)">
                                     <text
                                         x="661.289px"
                                         y="414.439px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.92068,-0.390317,0.390317,0.92068,-109.309,290.986)"
                                     >
-                                        n
+                                        {'n'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.943755,-0.330645,0.330645,0.943755,-95.302,249.199)">
                                     <text
                                         x="684.83px"
                                         y="404.725px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.943755,-0.330645,0.330645,0.943755,-95.302,249.199)"
                                     >
-                                        i
+                                        {'i'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.958195,-0.286117,0.286117,0.958195,-85.6985,215.642)">
                                     <text
                                         x="695.081px"
                                         y="401.083px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.958195,-0.286117,0.286117,0.958195,-85.6985,215.642)"
                                     >
-                                        t
+                                        {'t'}
                                     </text>
+                                </g>
+                                <g transform="matrix(0.976225,-0.216762,0.216762,0.976225,-69.0258,163.42)">
                                     <text
                                         x="710.442px"
                                         y="396.366px"
                                         style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
+                                            fontFamily: "'Inter-Medium', 'Inter'",
                                             fontWeight: 500,
-                                            fontSize: 42
+                                            fontSize: 42,
                                         }}
-                                        transform="matrix(0.976225,-0.216762,0.216762,0.976225,-69.0258,163.42)"
                                     >
-                                        y
+                                        {'y'}
                                     </text>
                                 </g>
                             </g>
-                            <g
-                                id="donut heat-water-electricity-food"
-                                transform="matrix(0.707107,0.707107,-0.707107,0.707107,500,-207.107)"
-                            >
-                                <g className="interactive" onClick={() => this.handleDiagramClick('water')}
-                                   id="water">
-                                    <path
-                                        d="M500 273.737a42 42 0 0 0-49.581-41.31c-110.514 20.35-197.642 107.478-217.99 217.992A42 42 0 0 0 273.737 500l111.99.001c0-63.11 51.162-114.273 114.273-114.273v-111.99z"
-                                        style={{ fill: "rgb(126,169,203)" }}
-                                    />
-                                    <g
-                                        transform="matrix(1.19434e-15,-1,1,1.19434e-15,-86.0781,1077)"
-                                    >
+                        </g>
+                        <g
+                            id="donut-heat-water-electricity-food"
+                        >
+                            <g id="water"
+                               className="interactive"
+                               onClick={() => this.handleDiagramClick('water')}>
+                                <path
+                                    id="background-water"
+                                    d="M659.992,340.008c8.815,-8.815 13.259,-21.09 12.129,-33.505c-1.13,-12.415 -7.716,-23.686 -17.977,-30.765c-92.534,-63.755 -215.754,-63.755 -308.287,0.002c-10.26,7.078 -16.846,18.349 -17.976,30.763c-1.13,12.415 3.314,24.689 12.128,33.504c32.947,32.949 79.188,79.19 79.188,79.19c44.626,-44.626 116.98,-44.626 161.606,0c0,0 46.241,-46.241 79.189,-79.189Z"
+                                    style={{
+                                        fill: '#7ea9cb',
+                                    }}
+                                />
+                                <g
+                                    id="water1"
+                                    transform="matrix(0.707107,-0.707107,0.707107,0.707107,-322.42,493.581)"
+                                >
+                                    <g transform="matrix(0.839811,0.54288,-0.54288,0.839811,331.804,-295.829)">
                                         <text
                                             x="667.183px"
                                             y="414.325px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.839811,0.54288,-0.54288,0.839811,331.804,-295.829)"
                                         >
-                                            w
+                                            {'w'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.748727,0.662878,-0.662878,0.748727,462.554,-352.644)">
                                         <text
                                             x="696.429px"
                                             y="433.805px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.748727,0.662878,-0.662878,0.748727,462.554,-352.644)"
                                         >
-                                            a
+                                            {'a'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.674794,0.738006,-0.738006,0.674794,564.534,-380.881)">
                                         <text
                                             x="714.444px"
                                             y="450.122px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.674794,0.738006,-0.738006,0.674794,564.534,-380.881)"
                                         >
-                                            t
+                                            {'t'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.592285,0.805728,-0.805728,0.592285,667.893,-396.211)">
                                         <text
                                             x="725.444px"
                                             y="461.842px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.592285,0.805728,-0.805728,0.592285,667.893,-396.211)"
                                         >
-                                            e
+                                            {'e'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.497497,0.867466,-0.867466,0.497497,790.215,-399.75)">
                                         <text
                                             x="740.15px"
                                             y="482.195px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.497497,0.867466,-0.867466,0.497497,790.215,-399.75)"
                                         >
-                                            r
+                                            {'r'}
                                         </text>
                                     </g>
                                 </g>
-                                <g className="interactive" onClick={() => this.handleDiagramClick('electricity')}>
-                                    <path
-                                        d="M726.262 500a42 42 0 0 0 41.31-49.581c-20.35-110.514-107.478-197.642-217.991-217.99A42 42 0 0 0 500 273.737L500 385.727c63.11 0 114.273 51.162 114.273 114.273h111.99z"
-                                        style={{ fill: "rgb(211,172,113)" }}
-                                    />
-                                    <g
-                                        transform="matrix(1,0,0,1,-77,-86.0781)"
-                                    >
+                            </g>
+                            <g id="electricity"
+                               className="interactive"
+                               onClick={() => this.handleDiagramClick('electricity')}>
+                                <path
+                                    id="background-electricity"
+                                    d="M659.992,659.992c8.815,8.815 21.09,13.259 33.505,12.129c12.415,-1.13 23.686,-7.716 30.765,-17.977c63.755,-92.534 63.755,-215.754 -0.002,-308.287c-7.078,-10.26 -18.349,-16.846 -30.763,-17.976c-12.415,-1.13 -24.689,3.314 -33.504,12.128c-32.949,32.947 -79.19,79.188 -79.19,79.188c44.626,44.626 44.626,116.98 0,161.606c0,0 46.241,46.241 79.189,79.189Z"
+                                    style={{
+                                        fill: '#d3ac71',
+                                    }}
+                                />
+                                <g
+                                    id="electricity1"
+                                    transform="matrix(0.707107,0.707107,-0.707107,0.707107,506.419,-322.42)"
+                                >
+                                    <g transform="matrix(0.94871,0.316148,-0.316148,0.94871,158.231,-177.581)">
                                         <text
                                             x="626.413px"
                                             y="398.87px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.94871,0.316148,-0.316148,0.94871,158.231,-177.581)"
                                         >
-                                            e
+                                            {'e'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.914935,0.403601,-0.403601,0.914935,219.623,-227.751)">
                                         <text
                                             x="650.107px"
                                             y="407.139px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.914935,0.403601,-0.403601,0.914935,219.623,-227.751)"
                                         >
-                                            l
+                                            {'l'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.873237,0.487295,-0.487295,0.873237,284.099,-269.592)">
                                         <text
                                             x="660.226px"
                                             y="411.263px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.873237,0.487295,-0.487295,0.873237,284.099,-269.592)"
                                         >
-                                            e
+                                            {'e'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.803951,0.594696,-0.594696,0.803951,385.597,-322.613)">
                                         <text
                                             x="682.106px"
                                             y="423.529px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.803951,0.594696,-0.594696,0.803951,385.597,-322.613)"
                                         >
-                                            c
+                                            {'c'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.73876,0.673969,-0.673969,0.73876,478.58,-358.324)">
                                         <text
                                             x="701.508px"
                                             y="438.178px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.73876,0.673969,-0.673969,0.73876,478.58,-358.324)"
                                         >
-                                            t
+                                            {'t'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.675069,0.737754,-0.737754,0.675069,563.036,-380.421)">
                                         <text
                                             x="713.391px"
                                             y="448.976px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.675069,0.737754,-0.737754,0.675069,563.036,-380.421)"
                                         >
-                                            r
+                                            {'r'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.625501,0.780224,-0.780224,0.625501,631.203,-392.551)">
                                         <text
                                             x="724.518px"
                                             y="461.241px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.625501,0.780224,-0.780224,0.625501,631.203,-392.551)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.552002,0.833843,-0.833843,0.552002,719.282,-399.644)">
                                         <text
                                             x="731.563px"
                                             y="469.565px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.552002,0.833843,-0.833843,0.552002,719.282,-399.644)"
                                         >
-                                            c
+                                            {'c'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.474348,0.880338,-0.880338,0.474348,822.77,-398.026)">
                                         <text
                                             x="744.683px"
                                             y="489.955px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.474348,0.880338,-0.880338,0.474348,822.77,-398.026)"
                                         >
-                                            i
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.412668,0.910881,-0.910881,0.412668,895.408,-389.704)">
                                         <text
                                             x="749.896px"
                                             y="499.483px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.412668,0.910881,-0.910881,0.412668,895.408,-389.704)"
                                         >
-                                            t
+                                            {'t'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.313947,0.94944,-0.94944,0.313947,1007.23,-365.766)">
                                         <text
                                             x="756.71px"
                                             y="514.078px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.313947,0.94944,-0.94944,0.313947,1007.23,-365.766)"
                                         >
-                                            y
+                                            {'y'}
                                         </text>
                                     </g>
                                 </g>
-                                <g className="interactive" onClick={() => this.handleDiagramClick('food')}>
-                                    <path
-                                        d="M499.998 726.262a42 42 0 0 0 49.58 41.31c110.514-20.35 197.643-107.478 217.991-217.991A42 42 0 0 0 726.261 500L614.27 500c0 63.11-51.162 114.273-114.273 114.273v111.99z"
-                                        style={{ fill: "rgb(123,199,108)" }}
-                                    />
-                                    <g
-
-                                        transform="matrix(6.12323e-17,1,-1,6.12323e-17,1086.08,-77)"
-                                    >
+                            </g>
+                            <g id="food"
+                               className="interactive"
+                               onClick={() => this.handleDiagramClick('bio-mass')}>
+                                <path
+                                    id="background-food"
+                                    d="M340.008,659.992c-8.815,8.815 -13.259,21.09 -12.129,33.505c1.13,12.415 7.716,23.686 17.977,30.765c92.534,63.755 215.754,63.755 308.287,-0.002c10.26,-7.078 16.846,-18.349 17.976,-30.763c1.13,-12.415 -3.314,-24.689 -12.128,-33.504c-32.947,-32.949 -79.188,-79.19 -79.188,-79.19c-44.626,44.626 -116.98,44.626 -161.606,0c0,0 -46.241,46.241 -79.189,79.189Z"
+                                    style={{
+                                        fill: '#7bc76c',
+                                    }}
+                                />
+                                <g
+                                    id="food1"
+                                    transform="matrix(-0.707107,0.707107,-0.707107,-0.707107,1322.42,506.419)"
+                                >
+                                    <g transform="matrix(-0.381775,-0.924255,0.924255,-0.381775,566.012,1428.9)">
                                         <text
-                                            x="741.96px"
-                                            y="485.186px"
+                                            x="760.894px"
+                                            y="525.15px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.557315,-0.830301,0.830301,-0.557315,752.616,1371.64)"
                                         >
-                                            f
+                                            {'b'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.467325,-0.884086,0.884086,-0.467325,658.457,1397.87)">
                                         <text
-                                            x="733.26px"
-                                            y="471.781px"
+                                            x="750.349px"
+                                            y="500.572px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.642248,-0.766497,0.766497,-0.642248,842.576,1336.82)"
                                         >
-                                            o
+                                            {'i'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.548864,-0.835911,0.835911,-0.548864,744.501,1383.33)">
                                         <text
-                                            x="716.699px"
-                                            y="452.063px"
+                                            x="745.536px"
+                                            y="490.762px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.737754,-0.675069,0.675069,-0.737754,940.273,1269.4)"
                                         >
-                                            o
+                                            {'o'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(-0.719638,-0.694349,0.694349,-0.719638,926.482,1293.97)">
                                         <text
-                                            x="697.679px"
-                                            y="434.714px"
+                                            x="724.479px"
+                                            y="459.94px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(-0.819913,-0.572488,0.572488,-0.819913,1020.85,1190.55)"
                                         >
-                                            d
+                                            {'m'}
+                                        </text>
+                                    </g>
+                                    <g transform="matrix(-0.819269,-0.57341,0.57341,-0.819269,1019.05,1189.73)">
+                                        <text
+                                            x="697.018px"
+                                            y="434.269px"
+                                            style={{
+                                                fontFamily: "'Inter-Medium', 'Inter'",
+                                                fontWeight: 500,
+                                                fontSize: 42,
+                                            }}
+                                        >
+                                            {'a'}
+                                        </text>
+                                    </g>
+                                    <g transform="matrix(-0.88444,-0.466654,0.466654,-0.88444,1079.61,1108.12)">
+                                        <text
+                                            x="677.011px"
+                                            y="420.387px"
+                                            style={{
+                                                fontFamily: "'Inter-Medium', 'Inter'",
+                                                fontWeight: 500,
+                                                fontSize: 42,
+                                            }}
+                                        >
+                                            {'s'}
+                                        </text>
+                                    </g>
+                                    <g transform="matrix(-0.93363,-0.358239,0.358239,-0.93363,1123.1,1027.49)">
+                                        <text
+                                            x="656.732px"
+                                            y="409.708px"
+                                            style={{
+                                                fontFamily: "'Inter-Medium', 'Inter'",
+                                                fontWeight: 500,
+                                                fontSize: 42,
+                                            }}
+                                        >
+                                            {'s'}
                                         </text>
                                     </g>
                                 </g>
-                                <g className="interactive" onClick={() => this.handleDiagramClick('heat')}>
-                                    <path
-                                        d="M273.737 499.998a42 42 0 0 0-41.31 49.58c20.35 110.514 107.478 197.643 217.992 217.991A42 42 0 0 0 500 726.261L500 614.27c-63.11 0-114.273-51.162-114.273-114.273h-111.99z"
-                                        style={{ fill: "rgb(219,122,113)" }}
-                                    />
-                                    <g transform="matrix(-1,-1.22465e-16,1.22465e-16,-1,1077,1086.08)">
+                            </g>
+                            <g id="Heat"
+                               className="interactive"
+                               onClick={() => this.handleDiagramClick('heat')}>
+                                <path
+                                    id="background-heat"
+                                    d="M340.008,340.008c-8.815,-8.815 -21.09,-13.259 -33.505,-12.129c-12.415,1.13 -23.686,7.716 -30.765,17.977c-63.755,92.534 -63.755,215.754 0.002,308.287c7.078,10.26 18.349,16.846 30.763,17.976c12.415,1.13 24.689,-3.314 33.504,-12.128c32.949,-32.947 79.19,-79.188 79.19,-79.188c-44.626,-44.626 -44.626,-116.98 0,-161.606c0,0 -46.241,-46.241 -79.189,-79.189Z"
+                                    style={{
+                                        fill: '#db7a71',
+                                    }}
+                                />
+                                <g
+                                    id="heat"
+                                    transform="matrix(-0.707107,-0.707107,0.707107,-0.707107,493.581,1322.42)"
+                                >
+                                    <g transform="matrix(0.815598,0.57862,-0.57862,0.815598,368.738,-314.843)">
                                         <text
                                             x="678.328px"
                                             y="421.094px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.815598,0.57862,-0.57862,0.815598,368.738,-314.843)"
                                         >
-                                            h
+                                            {'h'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.733209,0.680003,-0.680003,0.733209,483.058,-359.189)">
                                         <text
                                             x="699.284px"
                                             y="436.021px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.733209,0.680003,-0.680003,0.733209,483.058,-359.189)"
                                         >
-                                            e
+                                            {'e'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.643106,0.765778,-0.765778,0.643106,603.135,-387.821)">
                                         <text
                                             x="717.635px"
                                             y="453.154px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.643106,0.765778,-0.765778,0.643106,603.135,-387.821)"
                                         >
-                                            a
+                                            {'a'}
                                         </text>
+                                    </g>
+                                    <g transform="matrix(0.558562,0.829463,-0.829463,0.558562,715.092,-399.714)">
                                         <text
                                             x="733.077px"
                                             y="471.973px"
                                             style={{
-                                                fontFamily: '"Inter-Medium", "Inter"',
+                                                fontFamily: "'Inter-Medium', 'Inter'",
                                                 fontWeight: 500,
-                                                fontSize: 42
+                                                fontSize: 42,
                                             }}
-                                            transform="matrix(0.558562,0.829463,-0.829463,0.558562,715.092,-399.714)"
                                         >
-                                            t
+                                            {'t'}
                                         </text>
                                     </g>
                                 </g>
-                                <g
-                                    id="circular arrow"
-                                    transform="matrix(0.707107,-0.707107,0.707107,0.707107,-207.523,500.416)"
-                                >
-                                    <path
-                                        d="M373.6 506.105h-10.55c2.31 46.837 29.67 91.359 70.89 114.248 20.29 11.269 43.59 17.207 66.76 17.243v3c-35.56-.055-70.96-14.089-96.82-38.609-26.12-24.756-42.1-59.63-43.83-95.882h-10.87l12.21-12.21 12.21 12.21zm264.76-12.21c-1.44-31.482-14.01-62.768-35.4-86.437-25.79-28.543-63.79-45.416-102.26-45.476v-3l.45.001c48.33.23 95.66 27.004 120.61 68.906 11.85 19.898 18.6 42.718 19.61 66.006H652l-12.21 12.21-12.22-12.21h10.79z"
-                                        style={{ fillRule: "nonzero" }}
-                                    />
-                                    <path
-                                        d="M493.89 359.164v-10.572l12.22 12.21-12.22 12.211V362.17c-45.39 2.438-88.67 28.34-111.89 67.611-12.48 21.093-19.06 45.661-19.11 70.011l-3-.006c.06-31.641 11.06-63.203 30.84-87.903 24.93-31.136 63.39-50.651 103.16-52.719zm13.9 278.227c45.72-2.567 89.6-29.039 112.65-69.393 11.8-20.643 18.03-44.529 18.07-68.211l3 .004c-.05 30.564-10.27 60.97-28.76 85.237-24.72 32.448-63.88 53.161-104.96 55.372v11.008l-12.21-12.21 12.21-12.211v10.404z"
-                                        style={{ fillRule: "nonzero" }}
-                                    />
-                                </g>
                             </g>
-                            <g className="interactive" onClick={() => this.handleDiagramClick('p2p-production')}
-                                id="core P2P-production"
-                               transform="matrix(1.06512,0,0,1.06512,-32.5581,-32.5581)"
-                            >
-                                <ellipse
-                                    cx="499.194"
-                                    cy="499.5"
-                                    rx="0.781"
-                                    ry="112.5"
-                                    style={{ fill: "rgb(243,243,243)" }}
-                                    transform="matrix(137.615,0,0,0.955556,-68196.5,22.7)"
+                            <g id="circular-arrow">
+                                <path
+                                    d="M373.013,506.105l-10.552,0c2.313,46.837 29.671,91.359 70.89,114.248c20.295,11.269 43.587,17.207 66.761,17.243l-0.005,3c-35.554,-0.055 -70.953,-14.089 -96.82,-38.609c-26.118,-24.756 -42.093,-59.63 -43.827,-95.882l-10.868,0l12.21,-12.21l12.211,12.21Z"
+                                    style={{
+                                        fillRule: 'nonzero',
+                                    }}
                                 />
-                                <g transform="matrix(1,0,0,1,1.09167,-7.32404)">
-                                    <text
-                                        x="464.324px"
-                                        y="501.462px"
-                                        style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
-                                            fontWeight: 500,
-                                            fontSize: 36
-                                        }}
-                                    >
-                                        P<tspan x="487.695px 510.133px " y="501.462px 501.462px ">
-                                        2P
+                                <path
+                                    d="M637.777,493.895c-1.444,-31.482 -14.013,-62.768 -35.4,-86.437c-25.791,-28.543 -63.8,-45.416 -102.27,-45.476l0.005,-3c0.151,0 0.302,0 0.453,0.001c48.33,0.23 95.659,27.004 120.611,68.906c11.849,19.898 18.6,42.718 19.609,66.006l10.623,0l-12.21,12.21l-12.211,-12.21l10.79,0Z"
+                                    style={{
+                                        fillRule: 'nonzero',
+                                    }}
+                                />
+                                <path
+                                    d="M493.306,359.164l0,-10.572l12.211,12.21l-12.211,12.211l0,-10.843c-45.395,2.438 -88.675,28.34 -111.897,67.611c-12.473,21.093 -19.06,45.661 -19.107,70.011l-3,-0.006c0.061,-31.641 11.059,-63.203 30.838,-87.903c24.934,-31.136 63.391,-50.651 103.166,-52.719Z"
+                                    style={{
+                                        fillRule: 'nonzero',
+                                    }}
+                                />
+                                <path
+                                    d="M507.202,637.391c45.721,-2.567 89.597,-29.039 112.654,-69.393c11.795,-20.643 18.027,-44.529 18.061,-68.211c1,0.001 2,0.003 3,0.004c-0.044,30.564 -10.262,60.97 -28.754,85.237c-24.726,32.448 -63.883,53.161 -104.961,55.372l0,11.008l-12.211,-12.21l12.211,-12.211l0,10.404Z"
+                                    style={{
+                                        fillRule: 'nonzero',
+                                    }}
+                                />
+                            </g>
+                        </g>
+                        <g id="core-P2P-production"
+                           className="interactive"
+                           onClick={() => this.handleDiagramClick('p2p-production')}>
+                            <circle
+                                cx={500}
+                                cy={500}
+                                r={114.5}
+                                style={{
+                                    fill: '#f3f3f3',
+                                }}
+                            />
+                            <g transform="matrix(1.06512,0,0,1.06512,-31.3954,-40.3591)">
+                                <text
+                                    x="464.324px"
+                                    y="501.462px"
+                                    style={{
+                                        fontFamily: "'Inter-Medium', 'Inter'",
+                                        fontWeight: 500,
+                                        fontSize: 36,
+                                    }}
+                                >
+                                    {'P'}
+                                    <tspan x="487.695px 510.133px " y="501.462px 501.462px ">
+                                        {'2P'}
                                     </tspan>
-                                    </text>
-                                    <text
-                                        x="402.902px"
-                                        y="537.462px"
-                                        style={{
-                                            fontFamily: '"Inter-Medium", "Inter"',
-                                            fontWeight: 500,
-                                            fontSize: 36
-                                        }}
-                                    >
-                                        P<tspan
+                                </text>
+                                <text
+                                    x="402.902px"
+                                    y="537.462px"
+                                    style={{
+                                        fontFamily: "'Inter-Medium', 'Inter'",
+                                        fontWeight: 500,
+                                        fontSize: 36,
+                                    }}
+                                >
+                                    {'P'}
+                                    <tspan
                                         x="426.273px 440.465px 462.507px 485.393px 507.153px 527.955px 541.7px 551.022px 573.064px "
                                         y="537.462px 537.462px 537.462px 537.462px 537.462px 537.462px 537.462px 537.462px 537.462px "
                                     >
-                                        roduction
+                                        {'roduction'}
                                     </tspan>
-                                    </text>
-                                </g>
+                                </text>
                             </g>
                         </g>
                     </g>
                     <defs>
                         <radialGradient
-                            id="b"
+                            id="_Radial2"
                             cx={0}
                             cy={0}
                             r={1}
                             gradientUnits="userSpaceOnUse"
-                            gradientTransform="matrix(-1.37027e-30,286.086,-286.086,-1.37027e-30,577.914,600.086)"
+                            gradientTransform="matrix(496.826,0,0,496.826,496.826,500)"
                         >
                             <stop
                                 offset={0}
-                                style={{ stopColor: "white", stopOpacity: 0 }}
-                            />
-                            <stop
-                                offset="0.64"
                                 style={{
-                                    stopColor: "rgb(255,241,217)",
-                                    stopOpacity: "0.14902"
+                                    stopColor: '#fff',
+                                    stopOpacity: 0,
                                 }}
                             />
                             <stop
-                                offset="0.84"
+                                offset={0.64}
                                 style={{
-                                    stopColor: "rgb(255,205,117)",
-                                    stopOpacity: "0.541176"
+                                    stopColor: '#fff1d9',
+                                    stopOpacity: 0.14902,
+                                }}
+                            />
+                            <stop
+                                offset={0.84}
+                                style={{
+                                    stopColor: '#ffcd75',
+                                    stopOpacity: 0.541176,
                                 }}
                             />
                             <stop
                                 offset={1}
-                                style={{ stopColor: "rgb(255,162,0)", stopOpacity: 1 }}
+                                style={{
+                                    stopColor: '#ffa200',
+                                    stopOpacity: 1,
+                                }}
                             />
                         </radialGradient>
                         <radialGradient
-                            id="c"
+                            id="_Radial3"
                             cx={0}
                             cy={0}
                             r={1}
                             gradientUnits="userSpaceOnUse"
-                            gradientTransform="matrix(-1.37027e-30,286.086,-286.086,-1.37027e-30,577.914,600.086)"
+                            gradientTransform="matrix(496.826,0,0,496.826,496.826,500)"
                         >
                             <stop
                                 offset={0}
-                                style={{ stopColor: "white", stopOpacity: 0 }}
-                            />
-                            <stop
-                                offset="0.64"
                                 style={{
-                                    stopColor: "rgb(217,249,255)",
-                                    stopOpacity: "0.14902"
+                                    stopColor: '#fff',
+                                    stopOpacity: 0,
                                 }}
                             />
                             <stop
-                                offset="0.84"
+                                offset={0.64}
                                 style={{
-                                    stopColor: "rgb(117,233,255)",
-                                    stopOpacity: "0.541176"
+                                    stopColor: '#d9f9ff',
+                                    stopOpacity: 0.14902,
+                                }}
+                            />
+                            <stop
+                                offset={0.84}
+                                style={{
+                                    stopColor: '#75e9ff',
+                                    stopOpacity: 0.541176,
                                 }}
                             />
                             <stop
                                 offset={1}
-                                style={{ stopColor: "rgb(0,214,255)", stopOpacity: 1 }}
+                                style={{
+                                    stopColor: '#00d6ff',
+                                    stopOpacity: 1,
+                                }}
                             />
                         </radialGradient>
                         <radialGradient
-                            id="d"
+                            id="_Radial4"
                             cx={0}
                             cy={0}
                             r={1}
                             gradientUnits="userSpaceOnUse"
-                            gradientTransform="matrix(-1.37027e-30,286.086,-286.086,-1.37027e-30,577.914,600.086)"
+                            gradientTransform="matrix(496.826,0,0,496.826,496.826,500)"
                         >
                             <stop
                                 offset={0}
-                                style={{ stopColor: "white", stopOpacity: 0 }}
-                            />
-                            <stop
-                                offset="0.64"
                                 style={{
-                                    stopColor: "rgb(255,236,253)",
-                                    stopOpacity: "0.14902"
+                                    stopColor: '#fff',
+                                    stopOpacity: 0,
                                 }}
                             />
                             <stop
-                                offset="0.84"
+                                offset={0.64}
                                 style={{
-                                    stopColor: "rgb(255,186,249)",
-                                    stopOpacity: "0.541176"
+                                    stopColor: '#ffecfd',
+                                    stopOpacity: 0.14902,
+                                }}
+                            />
+                            <stop
+                                offset={0.84}
+                                style={{
+                                    stopColor: '#ffbaf9',
+                                    stopOpacity: 0.541176,
                                 }}
                             />
                             <stop
                                 offset={1}
-                                style={{ stopColor: "rgb(255,128,244)", stopOpacity: 1 }}
+                                style={{
+                                    stopColor: '#ff80f4',
+                                    stopOpacity: 1,
+                                }}
                             />
                         </radialGradient>
                     </defs>
