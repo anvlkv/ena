@@ -1,10 +1,14 @@
 [
   {
     "name": "P2P Production",
-    "intro": "This is a short lead into topic...",
     "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image"
+    "cover": "kk.jpg",
+    "pages": [
+      {
+        "name": "CO2-neutral place for BBQ",
+        "cover": "kk2.jpg"
+      }
+    ]
   },
   {
     "name": "Water",
@@ -34,7 +38,7 @@
     "pages": [
       {
         "name": "Solar stored supply network",
-        "cover": "placeholder.jpg"
+        "cover": "solarpanel.png"
       },
       {
         "name": "Solar direct applied",
@@ -73,7 +77,7 @@
   {
     "name": "Quintuple helix collaboration",
     "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
+    "cover": "ena-quintuple-helix.png",
     "coverAlt": "this is placeholder image"
   }
 ]

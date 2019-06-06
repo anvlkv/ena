@@ -1,7 +1,6 @@
 [
   {
     "name": "Rain water collector",
-    "lead": "Rain water collector and sand filter",
     "description": "text <strong>or</strong> <i>markup<i/>",
     "cover": "placeholder.jpg",
     "coverAlt": "this is placeholder image",
@@ -18,32 +17,33 @@
   {
     "name": "Greywater filter",
     "cover": "Waterfilter-3.jpg",
-    "lead": "Rain water collector and sand filter",
     "description": "text <strong>or</strong> <i>markup<i/>",
     "coverAlt": "this is placeholder image",
     "documents": [
     ],
     "images": [
-      "Waterfilter-3.jpg",
       "Waterfilter-4.jpg",
-      "scheme-grey-water-filter.jpg"
+      "scheme-grey-water-filter.jpg",
+      "scheme-grijswater-en-rookwasser.jpg"
     ]
   },
   {
     "name": "Urine filter",
-    "lead": "Urine filter",
     "description": "text <strong>or</strong> <i>markup<i/>",
     "cover": "scheme-urine-filter.jpg",
     "coverAlt": "this is placeholder image",
     "documents": [
     ],
     "images": [
-      "scheme-urine-filter.jpg"
+      "scheme-urine-filter-25-5.jpg"
     ]
   },
   {
     "name": "Solar stored supply network",
-    "cover": "placeholder.jpg"
+    "cover": "solarpanel.png",
+    "images": [
+      "solarnetwork.jpg"
+    ]
   },
   {
     "name": "Solar direct applied",
@@ -53,7 +53,6 @@
     "name": "Aquaponics (op oppervlakte water)",
     "cover": "Aquaponics-1.jpg",
     "images": [
-      "Aquaponics-1.jpg",
       "Aquaponics-8.jpg",
       "Aquaponics-11.jpg"
     ]
@@ -65,5 +64,9 @@
   {
     "name": "Rocket Stove grill",
     "cover": "placeholder.jpg"
+  },
+  {
+    "name": "CO2-neutral place for BBQ",
+    "cover": "kk2.jpg"
   }
 ]
