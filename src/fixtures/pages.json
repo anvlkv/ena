@@ -1,38 +1,27 @@
 [
   {
     "name": "Rain water collector",
-    "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
-    "coverAlt": "this is placeholder image",
-    "documents": [
-      {
-        "name": "design.dwg",
-        "url": "http://404"
-      }
-    ],
+    "description": "<p>Rainwater can be totally absorbed by the local setup. Excess water can be stored in tanks, canals and the groundwater. Storage tanks with a capacity up to 10m3 are sufficient to bridge a rainless period of up to 50 active restaurant days. The catchment surface is 150m2, which can harvest about 150m3 per year.<p/>",
+    "cover": "Waterfilter-3.jpg",
     "images": [
-      "placeholder.jpg"
+      "Waterfilter-4.jpg"
     ]
   },
   {
     "name": "Greywater filter",
-    "cover": "Waterfilter-3.jpg",
-    "description": "text <strong>or</strong> <i>markup<i/>",
-    "coverAlt": "this is placeholder image",
+    "cover": "graywaterfilter.jpg",
+    "description": "<p>The greywater helophyte filter has a capacity of 200 liters/day. This is the average amount that is used by evapotranspiration of the helophytes itself and some irrigated area inside the compound. So there is no outflow, and no sewage connection necessary. Fluctuations are absorbed by the storage capacity of 4m3.<p/>",
     "documents": [
     ],
     "images": [
-      "graywaterfilter.jpg",
-      "Waterfilter-4.jpg",
       "scheme-grey-water-filter.jpg",
       "scheme-grijswater-en-rookwasser.jpg"
     ]
   },
   {
     "name": "Urine filter",
-    "description": "text <strong>or</strong> <i>markup<i/>",
+    "description": "<p>The  urine sand filter for the outflow from urine diverting toilets and urinals) like the greywater filter also has a dimension that evapotranspiration of the planted filter is larger than the inflow. To guarantee that the plants are enough watered, there is again sufficient storage capacity of filtered water and a backflow. <p/>",
     "cover": "scheme-urine-filter.jpg",
-    "coverAlt": "this is placeholder image",
     "documents": [
     ],
     "images": [
@@ -42,16 +31,19 @@
   {
     "name": "Solar stored supply network",
     "cover": "solarpanel.png",
+    "description": "<p>Here we use 24 panels, delivering up to 5 kW during  the day, and 800 Amp-hours of battery storage.</p>",
     "images": [
       "solarnetwork.jpg"
     ]
   },
   {
-    "name": "Solar direct applied",
-    "cover": "placeholder.jpg"
+    "name": "Solar directly applied",
+    "cover": "solarpanel.png",
+    "description": "<p>Here we use \"solar waste\", panels that are not anymore up to standard for large systems, but still deliver enough for direct applications (same voltage, no solar controller)</p>"
   },
   {
     "name": "Aquaponics (op oppervlakte water)",
+    "description": "<p>Here we have a vertical garden of 4 meters high and 100 buckets big, representing a surface of 20m2 production space in a heated greenhouse. There are three basins, of which one is producing fish food (4m3), one for fish (2m3) and one mixing tank (0,5m3), from which water is pumped to the highest row of plants from which it trickled down, back to the fish tank and where it gets filtered on the way.</p>",
     "cover": "Aquaponics-1.jpg",
     "images": [
       "Aquaponics-8.jpg",
@@ -60,14 +52,17 @@
   },
   {
     "name": "Rocket Stove mass heater",
-    "cover": "placeholder.jpg"
+    "cover": "rocketstove-cover.jpg",
+    "description": "<p>The rocket stove mass heater is used for accumulating and storing heat in the pizza oven for cooking (pizza, slow cooking) and for the night (clay pizza oven and clay heat bench).</p>"
   },
   {
     "name": "Rocket Stove grill",
-    "cover": "placeholder.jpg"
+    "cover": "rocketstove-cover.jpg",
+    "description": "<p>This rocket stove can be used for heating the space (as a wood stove)  and for cooking (grilling, stove).</p>"
   },
   {
     "name": "CO2-neutral place for BBQ",
+    "description": "<p>This is one example of an integrated production system in which all resource streams are interconnected, and with zero impact considering waste, wastewater. and CO2 and a positive effect on local biodiversity.</p>",
     "cover": "kk2.jpg",
     "images": [
       "KK.BBQ-public-space.png"

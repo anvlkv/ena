@@ -1,7 +1,7 @@
 [
   {
     "name": "P2P Production",
-    "description": "text <strong>or</strong> <i>markup<i/>",
+    "description": "<p>In the peer-to-peer production process, people participate voluntarily, as equal peers, and do what they do because they like doing it, because they love solving interesting problems, being creative and creating something useful. Knowing current climate issues, many people want to contribute their time and passion for developing future-proof designs.<p/>",
     "cover": "kk.jpg",
     "pages": [
       {
@@ -12,13 +12,13 @@
   },
   {
     "name": "Water",
-    "description": "text <strong>or</strong> <i>markup<i/>",
+    "description": "<p>The largest available clean water sources for the two largest usages (cleaning and green production) are sand-filtered rainwater, groundwater, and surface water. Wastewater from the kitchen and cleaning activities can also be upcycled into good irrigation water (high in phosphates and nitrates) by a sand/gravel filter.<p/>",
     "color": "#7EA9CB",
     "cover": "Water.png",
     "pages": [
       {
         "name": "Rain water collector",
-        "cover": "placeholder.jpg"
+        "cover": "Waterfilter-3.jpg"
       },
       {
         "name": "Greywater filter",
@@ -32,7 +32,7 @@
   },
   {
     "name": "Electricity",
-    "description": "text <strong>or</strong> <i>markup<i/>",
+    "description": "<p>Electricity is produced in multiple mutually supportive but autonomous systems. All low voltage pumps and fans are connected directly to a solar panel, as they require to function (for cooling, ventilation, oxygenation, filtering, etc.)  when there is sun or heat, so precisely when there is solar power. This economises enormously on storage capacity and on energy needed for voltage conversion and transport. Essential appliances such as fridges and freezers are connected to our own 220v grid, with storage capacity of several days. There is also a backup from the grid and a possibility to produce back to the grid. This backdoor also reduces enormously the need for battery storage.<p/>",
     "color": "#D3AC71",
     "cover": "Electricity.png",
     "pages": [
@@ -41,14 +41,14 @@
         "cover": "solarpanel.png"
       },
       {
-        "name": "Solar direct applied",
-        "cover": "placeholder.jpg"
+        "name": "Solar directly applied",
+        "cover": "solarpanel.png"
       }
     ]
   },
   {
     "name": "Bio mass",
-    "description": "text <strong>or</strong> <i>markup<i/>",
+    "description": "<p>Food and biomass production is done in multiple self-watering and self-feeding systems...</p><p>Another example of a totally integrated and unique but simple production system is the \"surface water aquaponics\", not closed like a \"normal\" aquaponics, but in contact and exchange with the surrounding aquatic biodiversity.<p/>",
     "cover": "Food.png",
     "color": "#7BC76C",
     "pages": [
@@ -60,23 +60,23 @@
   },
   {
     "name": "Heat",
-    "description": "text <strong>or</strong> <i>markup<i/>",
+    "description": "<p>Heat and hot water is produced by rocket stoves and solar heat pipes.</p><p>Rocket stoves are currently the most efficient wood burners available. They are running on local maintenance wood and own biomass (from the helophyte filters)</p><p>The little smoke it is producing (mainly during starting phase) is filtered by a smoke scrubber. This washes the smoke with water that is sprayed through nozzles. The water comes from the greywater filter and is heated up in the proces. This will provide a better environment for the  bacteria in the greywaterfilter that are transforming ammonia in the waste water into nitrates.<p/>",
     "cover": "Heat.png",
     "color": "#DB7A71",
     "pages": [
       {
         "name": "Rocket Stove mass heater",
-        "cover": "placeholder.jpg"
+        "cover": "rocketstove-cover.jpg"
       },
       {
         "name": "Rocket Stove grill",
-        "cover": "placeholder.jpg"
+        "cover": "rocketstove-cover.jpg"
       }
     ]
   },
   {
     "name": "Quintuple helix collaboration",
-    "description": "text <strong>or</strong> <i>markup<i/>",
+    "description": "<p>The Quintuple Helix innovation model focuses on relations of public organizations, private organizations, and knowledge institutions with civil society in the context of the natural environments in order to promote a cooperation system of knowledge, know-how, and innovation for more sustainable development.</p><p>The Kaskantine works together with other cooperatives in Amsterdam in the field of food production, distribution and commoning activities. Also we collaborate with neighbourhood organisations, local municipality departments and local shops and markets.<p/>",
     "cover": "ena-quintuple-helix.png",
     "coverAlt": "this is placeholder image"
   }
