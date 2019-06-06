@@ -38,17 +38,13 @@ class Page extends React.Component {
                 <Carousel showThumbs={false} infiniteLoop={true}>
                     {(this.state.page.images || []).reduce((acc, slide, at, all) => {
                         acc.push(
-                            <img width="960"
-                                 height="700"
-                                 key={`page-image-${at + 1}`}
+                            <img key={`page-image-${at + 1}`}
                                  alt={this.state.page.name}
                                  className="page-cover-image"
                                  src={require(`../../assets/images/pages/${slide}`)}/>);
                         return acc;
                     }, [
-                        <img width="960"
-                             height="700"
-                             key={'page-image-1'}
+                        <img key={'page-image-1'}
                              className="page-cover-image"
                              src={require(`../../assets/images/pages/${this.state.page.cover}`)}
                              alt={this.state.page.coverAlt || this.state.page.name}/>

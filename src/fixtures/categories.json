@@ -18,11 +18,11 @@
       },
       {
         "name": "Greywater filter",
-        "cover": "placeholder.jpg"
+        "cover": "Waterfilter-3.jpg"
       },
       {
         "name": "Urine filter",
-        "cover": "placeholder.jpg"
+        "cover": "scheme-urine-filter.jpg"
       }
     ]
   },
@@ -50,7 +50,7 @@
     "pages": [
       {
         "name": "Aquaponics (op oppervlakte water)",
-        "cover": "placeholder.jpg"
+        "cover": "Aquaponics-1.jpg"
       }
     ]
   },

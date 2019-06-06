@@ -17,34 +17,28 @@
   },
   {
     "name": "Greywater filter",
-    "cover": "placeholder.jpg",
+    "cover": "Waterfilter-3.jpg",
     "lead": "Rain water collector and sand filter",
     "description": "text <strong>or</strong> <i>markup<i/>",
     "coverAlt": "this is placeholder image",
     "documents": [
-      {
-        "name": "design.dwg",
-        "url": "http://404"
-      }
     ],
     "images": [
-      "placeholder.jpg"
+      "Waterfilter-3.jpg",
+      "Waterfilter-4.jpg",
+      "scheme-grey-water-filter.jpg"
     ]
   },
   {
     "name": "Urine filter",
     "lead": "Urine filter",
     "description": "text <strong>or</strong> <i>markup<i/>",
-    "cover": "placeholder.jpg",
+    "cover": "scheme-urine-filter.jpg",
     "coverAlt": "this is placeholder image",
     "documents": [
-      {
-        "name": "design.dwg",
-        "url": "http://404"
-      }
     ],
     "images": [
-      "placeholder.jpg"
+      "scheme-urine-filter.jpg"
     ]
   },
   {
@@ -57,7 +51,12 @@
   },
   {
     "name": "Aquaponics (op oppervlakte water)",
-    "cover": "placeholder.jpg"
+    "cover": "Aquaponics-1.jpg",
+    "images": [
+      "Aquaponics-1.jpg",
+      "Aquaponics-8.jpg",
+      "Aquaponics-11.jpg"
+    ]
   },
   {
     "name": "Rocket Stove mass heater",

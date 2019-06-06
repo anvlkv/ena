@@ -1,13 +1,11 @@
 .Page {
-  width: 100%;
   padding: 3em;
   display: flex;
   flex-direction: column;
   .page-cover-image {
-    max-width: 100%;
+    width: auto !important;
     max-height: 60vh;
-    height: auto;
-    width: auto;
+    max-width: 100%;
   }
   .primary-content-layout {
     display: flex;

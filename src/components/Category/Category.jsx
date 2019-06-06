@@ -15,8 +15,8 @@ class Category  extends React.Component{
         const pageUrl = `${this.props.location.pathname}/${stringToUrl(page.name)}`;
         return (
             <li className="page-thumbnail" key={`page-thumbnail-${i}`}>
-                <Link to={pageUrl}>
-                    <img width="100" height="60" src={require(`../../assets/images/pages/${page.cover}`)} alt={page.coverAlt}/>
+                <Link to={pageUrl} style={{backgroundColor: this.props.category.color}}>
+                    <img src={require(`../../assets/images/pages/${page.cover}`)} alt={page.coverAlt}/>
                     <p>{page.name}</p>
                 </Link>
             </li>
