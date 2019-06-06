@@ -53,7 +53,10 @@
   {
     "name": "Rocket Stove mass heater",
     "cover": "rocketstove-cover.jpg",
-    "description": "<p>The rocket stove mass heater is used for accumulating and storing heat in the pizza oven for cooking (pizza, slow cooking) and for the night (clay pizza oven and clay heat bench).</p>"
+    "description": "<p>The rocket stove mass heater is used for accumulating and storing heat in the pizza oven for cooking (pizza, slow cooking) and for the night (clay pizza oven and clay heat bench).</p>",
+    "images": [
+      "rocketstove.jpeg"
+    ]
   },
   {
     "name": "Rocket Stove grill",
