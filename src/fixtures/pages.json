@@ -39,7 +39,10 @@
   {
     "name": "Solar directly applied",
     "cover": "solarpanel.png",
-    "description": "<p>Here we use \"solar waste\", panels that are not anymore up to standard for large systems, but still deliver enough for direct applications (same voltage, no solar controller)</p>"
+    "description": "<p>Here we use \"solar waste\", panels that are not anymore up to standard for large systems, but still deliver enough for direct applications (same voltage, no solar controller)</p>",
+    "images": [
+      "directsupply.png"
+    ]
   },
   {
     "name": "Aquaponics (op oppervlakte water)",
