@@ -22,6 +22,7 @@
     "documents": [
     ],
     "images": [
+      "graywaterfilter.jpg",
       "Waterfilter-4.jpg",
       "scheme-grey-water-filter.jpg",
       "scheme-grijswater-en-rookwasser.jpg"
@@ -67,6 +68,9 @@
   },
   {
     "name": "CO2-neutral place for BBQ",
-    "cover": "kk2.jpg"
+    "cover": "kk2.jpg",
+    "images": [
+      "KK.BBQ-public-space.png"
+    ]
   }
 ]
