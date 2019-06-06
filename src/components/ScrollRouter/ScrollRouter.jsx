@@ -39,19 +39,17 @@ class ScrollRouter extends React.Component{
     }
 
     skipScroll() {
-        if (this.skipScrollEvent) {
-            clearTimeout(this.skipScrollEvent);
+        if (this.skipScrollTimeout) {
+            clearTimeout(this.skipScrollTimeout);
         }
 
         if (this.animationFramRequest) {
             cancelAnimationFrame(this.animationFramRequest);
         }
 
-        this.skipScrollEvent = setTimeout(() => {
-            this.animationFramRequest = requestAnimationFrame(() => {
-                delete this.skipScrollEvent;
-            });
-        }, 100);
+        this.skipScrollTimeout = setTimeout(() => requestAnimationFrame(() => {
+            delete this.skipScrollTimeout;
+        }), 50);
     }
 
     maybeSetRouteByScrollPosition() {
@@ -76,7 +74,7 @@ class ScrollRouter extends React.Component{
     }
 
     handleScroll() {
-        if (this.skipScrollEvent) {
+        if (this.skipScrollTimeout) {
             this.skipScroll();
             return;
         }

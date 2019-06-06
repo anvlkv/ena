@@ -1,8 +1,10 @@
+@import "../../vars";
+
 .Sidebar {
   .Diagram {
-    margin: 1em;
+    margin: 1.25em;
     svg {
-      margin-top: 10vh;
+      margin-top: 1.75vh;
       width: 100%;
       height: auto;
     }
@@ -14,7 +16,15 @@
       text-decoration: none;
     }
     .category-link {
-      padding: .25em;
+      margin: .25em;
+      a {
+        padding: .25em;
+        &.active {
+          background-color: $highlight-background;
+          color: white;
+          pointer-events: none;
+        }
+      }
       button {
         background: none;
         border: none;

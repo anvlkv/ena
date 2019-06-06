@@ -1,3 +1,5 @@
+@import "../../vars";
+
 .Landing {
   width: 100%;
   figure {
@@ -15,7 +17,7 @@
       font-weight: bolder;
       float: left;
       color: rgb(243,243,243);
-      background-color: rgb(187,196,169);
+      background-color: $highlight-background;
       line-height: 1;
       padding: .05em .025em .05em .05em;
       margin-right: .025em;

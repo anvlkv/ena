@@ -1,3 +1,5 @@
+@import "../../vars";
+
 .Page {
   padding: 3em;
   display: flex;
@@ -27,7 +29,7 @@
         a {
           display: block;
           color: white;
-          background-color: rgb(187,196,169);
+          background-color: $highlight-background;
           padding: .75em;
         }
       }

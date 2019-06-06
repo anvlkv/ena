@@ -21,13 +21,15 @@ class Sidebar extends React.Component {
                 ...p,
                 url: `${stringToUrl(c.name)}/${stringToUrl(p.name)}`
             })) : null,
-            expanded: true
+            expanded: false,
+            active: false
         }))
     };
 
     getActiveCategory(categories = this.state.categories) {
-        return categories.find(c => c.url === this.props.location.pathname ||
-            (c.pages && c.pages.find(p => p.url === this.props.location.pathname))) || {};
+        // if (this.props.location.params)
+        console.log(this.props.history);
+        return categories.find((category) => this.props.location.pathname.indexOf(stringToUrl(category.name)) >= 0);
     }
 
     expandCategory(at, expand = true) {
@@ -50,7 +52,8 @@ class Sidebar extends React.Component {
         return (
             <li key={`sidebar-category-${i}`} className="category-link">
                 {category.pages ? (<button onClick={() => this.expandCategory(i, !category.expanded)}>&gt;</button>) : ''}
-                <NavLink to={`/${category.url}`} activeClassName={'active'}>
+                <NavLink to={`/${category.url}`}
+                         activeClassName={'active'}>
                     {category.name}
                 </NavLink>
                 {category.pages && category.expanded ? (
@@ -74,7 +77,6 @@ class Sidebar extends React.Component {
         return (
             <div className="Sidebar">
                 <Diagram/>
-                <h3>{activeCategory.name}</h3>
                 <ul className="categories-list">
                     {this.state.categories.map(this.renderCategory.bind(this))}
                 </ul>
