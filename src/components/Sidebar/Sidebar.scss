@@ -19,6 +19,7 @@
       margin: .25em;
       a {
         padding: .25em;
+        display: inline-block;
         &.active {
           background-color: $highlight-background;
           color: white;

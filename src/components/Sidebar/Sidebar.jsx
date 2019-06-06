@@ -38,10 +38,10 @@ class Sidebar extends React.Component {
         this.setState({categories})
     }
 
-    renderPage(page, j, i) {
+    renderPage(page, index, categoryIndex) {
         return (
-            <li key={`sidebar-page-${j}-${i}`} className="page-link">
-                <NavLink to={`/${page.url}`} activeClassName={'active'}>
+            <li key={`sidebar-page-${index}-${categoryIndex}`} className="page-link">
+                <NavLink to={`/${page.url}`} activeClassName={'active'} activeStyle={{backgroundColor: this.state.categories[categoryIndex].color}}>
                     {page.name}
                 </NavLink>
             </li>
